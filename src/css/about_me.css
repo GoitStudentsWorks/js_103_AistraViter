@@ -65,7 +65,8 @@
   letter-spacing: 0.03em;
   margin-bottom: 12px;
 }
-li::before {
+
+.educ::before {
     content: "•"; /* Устанавливаем контент точки */
     color: #00B068; /* Устанавливаем цвет точки */
     display: inline-block; /* Делаем точку блочным элементом */
