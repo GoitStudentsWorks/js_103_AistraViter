@@ -1,0 +1,81 @@
+.work-together-head-line {
+  font-family: "Impact", sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23077;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+}
+
+.work-together-span {
+  color: #00b068;
+}
+
+.worktogether-paragraph {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55556;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+}
+
+.contacts-link {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+  text-decoration: none;
+  font-style: normal;
+}
+
+/* FORM */
+.work-together-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: center;
+}
+
+.user-email, 
+.user-message {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: rgba(41, 41, 41, 0.4);
+  border-radius: 8px;
+  padding: 16px;
+  width: 320px;
+  height: 48px;
+  background: #e4e5e6;
+  border: none;
+}
+
+.user-message {
+  width: 320px;
+  height: 128px;
+}
+
+.btn-message {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #f0f0f0;
+  border-radius: 8px;
+  padding: 12px 24px;
+  width: 320px;
+  height: 48px;
+  background: #00b068;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
