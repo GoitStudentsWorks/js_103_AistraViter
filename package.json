@@ -1,11 +1,11 @@
 {
-  "name": "project_f16",
+  "name": "f16",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/project_f16/",
+    "build": "vite build --base=/f16/",
     "preview": "vite preview"
   },
   "devDependencies": {
