@@ -19,10 +19,27 @@
 @import url('./footer.css');
 
 
-/* для тестування, чи ніхто не вийшов за границі секцій 
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-image: url('../img/decorbg_mobile.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../img/decorbg_original.png');
+}
+
+@media (min-width: 768px) {
+  body {
+  background-image: url('../img/decorbg_original.png');
+  }
+
+}
+
+/* для тестування, чи ніхто не вийшов за границі секцій
 .container {
   border: 2px solid red;
-  background-color: pink;
 }
 .section {
   border: 2px solid blue;
@@ -30,12 +47,12 @@
 }
 */
 
-
 .container {
   max-width: 360px;
   margin: 0 auto;
   padding: 0 20px;
 }
+
 .section {
   margin-bottom: 80px;
 }
