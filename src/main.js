@@ -1,2 +1,1 @@
-import Accordion from 'accordion-js';
-import 'accordion-js/dist/accordion.min.css';
+import { toggleAccordion } from './js/faq.js';
