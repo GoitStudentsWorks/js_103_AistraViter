@@ -1,17 +1,3 @@
-.work-together-head-line {
-  font-family: "Impact", sans-serif;
-  font-weight: 400;
-  font-size: 52px;
-  line-height: 1.23077;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #292929;
-}
-
-.work-together-span {
-  color: #00b068;
-}
-
 .worktogether-paragraph {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -20,6 +6,14 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #292929;
+  margin-bottom: 30px;
+}
+
+.contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 40px;
 }
 
 .contacts-link {
@@ -33,12 +27,16 @@
   font-style: normal;
 }
 
+.contacts-link:hover {
+  color: #00b068;
+}
+
 /* FORM */
+
 .work-together-form {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  justify-content: center;
 }
 
 .user-email, 
@@ -51,14 +49,11 @@
   color: rgba(41, 41, 41, 0.4);
   border-radius: 8px;
   padding: 16px;
-  width: 320px;
-  height: 48px;
   background: #e4e5e6;
   border: none;
 }
 
 .user-message {
-  width: 320px;
   height: 128px;
 }
 
@@ -72,10 +67,16 @@
   color: #f0f0f0;
   border-radius: 8px;
   padding: 12px 24px;
-  width: 320px;
+  /* width: 320px; */
   height: 48px;
   background: #00b068;
   border: none;
   cursor: pointer;
   text-transform: uppercase;
+  text-align: center;
 }
+
+.btn-message:hover{
+  background: #009156;
+}
+

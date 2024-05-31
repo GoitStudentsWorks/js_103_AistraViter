@@ -1,0 +1,66 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 32, 35, 0.8);
+  /* вимикач */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 288px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 48px 32px 48px 32px;
+  border-radius: 16px;
+  background: rgb(240, 240, 240);
+}
+.close {
+  position: absolute;
+  right: 22px;
+  top: 22px;
+  /* font-size: 45px;
+  transform: rotate(45deg); */
+  border: none;
+}
+.modal-header {
+  color: rgb(20, 197, 124);
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+}
+.modal-paragraf {
+  margin-top: 16px;
+  color: rgb(41, 41, 41);
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+@media (min-width: 768px) {
+  .modal {
+    min-width: 364px;
+    padding: 64px;
+  }
+}

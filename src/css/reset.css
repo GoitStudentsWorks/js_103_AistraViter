@@ -20,7 +20,6 @@ p {
   font-weight: 300;
 }
 
-
 ul {
   margin: 0;
   padding: 0;
@@ -48,16 +47,13 @@ button {
   font-family: inherit;
 }
 
-
 body {
   margin: 0 auto;
   padding: 0;
-  background-image: url('../img/decorbg_mobile.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #E4E5E6;
-
+  background-color: #f0f0f0;
 
   font-family: 'Poppins', 'Inter', sans-serif;
   color: #292929;
@@ -71,7 +67,7 @@ body {
 
 @media (min-width: 768px) {
   body {
-  background-image: url('../img/decorbg_original.png');
+    
   }
 }
 
@@ -94,6 +90,31 @@ body {
 .section {
   margin-bottom: 80px;
 }
+.logo{
+  font-family: Impact, 'Anton', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.green-span {
+  color: #00b068;
+}
+
+.headline {
+  font-family: Impact, 'Anton', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23077;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.text-center {
+  text-align: center;
+}
 
 @media (min-width: 768px) {
   .container {
@@ -103,6 +124,12 @@ body {
   .section {
     margin-bottom: 124px;
   }
+  .headline {
+    font-size: 108px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    margin-bottom: 60px;
+  }
 }
 
 @media (min-width: 1260px) {
@@ -111,5 +138,8 @@ body {
   }
   .section {
     margin-bottom: 164px;
+  }
+  .headline {
+    margin-bottom: 80px;
   }
 }
