@@ -1,18 +1,3 @@
-.work-together-headline {
-  font-family: "Impact", sans-serif;
-  font-weight: 400;
-  font-size: 52px;
-  line-height: 1.23077;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #292929;
-  margin-bottom: 42px;
-}
-
-.work-together-span {
-  color: #00b068;
-}
-
 .worktogether-paragraph {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -25,6 +10,9 @@
 }
 
 .contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   margin-bottom: 40px;
 }
 
@@ -45,10 +33,6 @@
 
 /* FORM */
 
-/*icons*/
-.icon-work-together{
-  fill: currentColor;
-}
 .work-together-form {
   display: flex;
   flex-direction: column;
@@ -95,3 +79,4 @@
 .btn-message:hover{
   background: #009156;
 }
+
