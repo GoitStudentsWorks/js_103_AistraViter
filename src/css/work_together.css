@@ -45,10 +45,6 @@
 
 /* FORM */
 
-/*icons*/
-.icon-work-together{
-  fill: currentColor;
-}
 .work-together-form {
   display: flex;
   flex-direction: column;
@@ -95,3 +91,4 @@
 .btn-message:hover{
   background: #009156;
 }
+
