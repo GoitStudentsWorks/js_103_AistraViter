@@ -1,0 +1,90 @@
+.hero h1 {
+  font-family: Impact, sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  margin-top: 96px;
+}
+.hero h1 span {
+  color: rgba(0, 176, 104, 1);
+}
+
+.hero-btn {
+  width: 100%;
+  height: 92px;
+  margin-bottom: 40px;
+  border: none;
+  z-index: 1;
+  position: relative;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.hero-btn::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background: rgba(0, 176, 104, 0.2);
+  top: 0;
+  right: 0;
+  z-index: -1;
+  border-radius: 15px;
+}
+
+.hero-intro {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55556;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #292929;
+  margin-bottom: 72px;
+}
+
+.hero-intro span {
+  color: #00b068;
+}
+
+.hero-soc-media {
+  padding: 32px 0px;
+  background-color: #e4e5e6;
+}
+
+.hero-soc-media ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0px -20px;
+}
+
+.hero-soc-media ul li {
+  display: block;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+}
+
+/* ------------------------------Media 768------------------------------------ */
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 0 16px;
+  }
+}
+/* --------------------------Media screen 1260--------------------------------------- */
+
+@media screen and (min-width: 1260px) {
+  .hero {
+    padding: 0 25px;
+  }
+}
