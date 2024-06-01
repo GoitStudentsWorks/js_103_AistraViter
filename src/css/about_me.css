@@ -87,9 +87,9 @@
 /* *****************TABLET********************* */
 
 @media screen and (min-width: 768px) {
-
   .imgclass {
     height: 392px;
+    margin-top: 408px;
   }
 
   .one {
@@ -105,13 +105,13 @@
     width: 336px;
   }
 
-  .htwoclass {
-    line-height: 48px;
-  }
-  
   .edurol {
     display: flex;
     gap: 32px;
+  }
+
+  .htwoclass {
+    line-height: 48px;
   }
 
   .about-h {
@@ -121,24 +121,6 @@
 
   .about-p {
     width: 336px;
-    /* font-size: 16px;
-    line-height: 140%;
-    margin-bottom: 48px;
-  
-    margin-left: auto;
-    margin-right: auto; */
-  }
-
-  .btn-hero {
-    width: 179px;
-    padding: 16px 40px;
-    border: none;
-    height: 52px;
-  }
-
-  .hero-a {
-    font-size: 18px;
-    line-height: 110%;
   }
 
   /* @media (min-resolution: 192dpi) {
@@ -156,8 +138,8 @@
 
 /* ****************DESKTOP****************** */
 
-/* @media screen and (min-width: 1280px) {
-  .hero-section {
+@media screen and (min-width: 1280px) {
+  /* .hero-section {
     background-image: linear-gradient(
         360deg,
         #11131f 15.05%,
@@ -167,6 +149,31 @@
       url(../img/img-hero/yacht-bg-desktop-1x.jpg);
     padding-top: 235px;
     padding-bottom: 243px;
+  } */
+
+  .imgclass {
+    margin-top: 312px;
+    margin-left: 240px;
+  }
+  .edurol {
+    margin-left: 240px;
+  }
+  .htwoclass {
+    line-height: 48px;
+  }
+
+  .about-h {
+    font-size: 108px;
+    line-height: 124px;
+  }
+  .row {
+    margin-left: 136px;
+  }
+  .about-p {
+    width: 488px;
+  }
+  .role {
+    margin-left: 136px;
   }
 
   .hero-h {
@@ -204,7 +211,7 @@
         url(../img/img-hero/yacht-bg-desktop-2x.jpg);
     }
   }
-} */
+}
 
 /*#region media*/
 /* @media screen and (min-width: 768px) {
