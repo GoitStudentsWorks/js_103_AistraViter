@@ -110,7 +110,7 @@ body {
   }
 
   .backgroung-hero {
-    min-width: 704px;
+    min-width: 600px;
   }
 
   .backgroung-hero::before {
@@ -147,9 +147,9 @@ body {
     max-width: 1260px;
   }
 
-  .backgroung-hero,
-  .backgroung-worktogether {
-    width: 1260px;
+  .backgroung-hero{
+    min-width: 1100px;
+
   }
 
   .backgroung-hero::before {
