@@ -67,20 +67,17 @@ body {
 
 @media (min-width: 768px) {
   body {
-    
   }
 }
 
-/* для тестування, чи ніхто не вийшов за границі секцій
+/* для тестування, чи ніхто не вийшов за границі секцій*/
 .container {
   border: 2px solid red;
 }
 .section {
   border: 2px solid blue;
-  background-color: aqua; 
+  /*background-color: aqua; */
 }
-*/
-
 .container {
   max-width: 360px;
   margin: 0 auto;
@@ -90,7 +87,8 @@ body {
 .section {
   margin-bottom: 80px;
 }
-.logo{
+
+.logo {
   font-family: Impact, 'Anton', sans-serif;
   font-weight: 400;
   font-size: 32px;
@@ -121,6 +119,25 @@ body {
     max-width: 768px;
     padding: 0 32px;
   }
+
+  .backgroung-top-right {
+    width: 768px;
+    position: relative;
+    }
+  
+    .backgroung-top-right::before {
+    width: 366px;
+    height: 260px;
+    content: '';
+    position: absolute;
+    top: -104px; /* Виступання на 100px вверх */
+    right: 0;
+    background-image: url('/img/decore-tablet-1.png');
+    background-repeat: no-repeat right top;
+    z-index: -1; /* Розміщує псевдоелемент позаду контенту */
+  }
+  
+  
   .section {
     margin-bottom: 124px;
   }
@@ -136,6 +153,15 @@ body {
   .container {
     max-width: 1260px;
   }
+
+  .backgroung-top-right {
+    width: 1260px;
+    }
+  
+    .backgroung-top-right::before {
+    top: -144px; 
+  }
+
   .section {
     margin-bottom: 164px;
   }
