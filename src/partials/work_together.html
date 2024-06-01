@@ -3,52 +3,65 @@
     <h2 class="headline">
       Let's <span class="green-span">work together</span>
     </h2>
-    <p class="worktogether-paragraph">
-      Contact me to transform your ideas into exceptional solutions.
-    </p>
-    <address>
-      <ul class="contacts-list">
-        <li>
-          <a class="contacts-link" href="tel:+380904567890"
-            >+38 090 456 78 90</a
-          >
-        </li>
-        <li>
-          <a class="contacts-link" href="mailto:lloydjefferson@gmail.com"
-            >lloydjefferson@gmail.com</a
-          >
-        </li>
-        <li>
-          <a
-            class="contacts-link"
-            href="https://www.google.com/maps/place/USA,+New+York"
-            >USA, New York</a
-          >
-        </li>
-      </ul>
-    </address>
+    <div class="wt-content-wrapper">
+      <div class="wt-text-address-wrapper">
+        <p class="worktogether-paragraph">
+          Contact me to transform your ideas into exceptional solutions.
+        </p>
+        <address>
+          <ul class="contacts-list">
+            <li>
+              <svg width="24" height="24">
+                <use href="/src/img/symbol-defs.svg#icon-telefon"></use>
+              </svg>
+              <a class="contacts-link" href="tel:+380904567890"
+                >+38 090 456 78 90</a
+              >
+            </li>
+            <li>
+              <svg width="24" height="24">
+                <use href="/src/img/symbol-defs.svg#icon-konvert"></use>
+              </svg>
+              <a class="contacts-link" href="mailto:lloydjefferson@gmail.com"
+                >lloydjefferson@gmail.com</a
+              >
+            </li>
+            <li>
+              <svg width="24" height="24">
+                <use href="/src/img/symbol-defs.svg#icon-gps-marker"></use>
+              </svg>
+              <a
+                class="contacts-link"
+                href="https://www.google.com/maps/place/USA,+New+York"
+                >USA, New York</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
 
-    <form class="work-together-form" id="workTogetherForm">
-      <input
-        class="user-email"
-        id="userEmail"
-        type="email"
-        name="email"
-        placeholder="Your email*"
-        pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
-        required
-      />
-      <textarea
-        class="user-message"
-        id="userMessage"
-        name="message"
-        placeholder="Message"
-        required
-      ></textarea>
+      <form class="work-together-form" id="workTogetherForm">
+        <input
+          class="user-email"
+          id="userEmail"
+          type="email"
+          name="email"
+          placeholder="Your email*"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          required
+        />
+        <textarea
+          class="user-message"
+          id="userMessage"
+          name="message"
+          placeholder="Message"
+          required
+        ></textarea>
 
-      <button class="btn-message" id="sendButton" type="submit">
-        Send Message
-      </button>
-    </form>
+        <button class="btn-message" id="sendButton" type="submit">
+          Send Message
+        </button>
+      </form>
+    </div>
   </div>
 </section>
