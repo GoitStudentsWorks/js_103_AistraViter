@@ -67,30 +67,46 @@ body {
 
 @media (min-width: 768px) {
   body {
-    
   }
 }
 
-/* для тестування, чи ніхто не вийшов за границі секцій
+/* для тестування, чи ніхто не вийшов за границі секцій*/
 .container {
   border: 2px solid red;
 }
 .section {
   border: 2px solid blue;
-  background-color: aqua; 
+  /*background-color: aqua; */
 }
-*/
-
 .container {
+  min-width: 320px;
   max-width: 360px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
+.backgroung-hero {
+  min-width: 320px;
+  position: relative;
+}
+
+.backgroung-hero::before {
+  width: 320px;
+  height: 704px;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url('/img/decor-mobile-hero.png');
+  background-repeat: no-repeat right top;
+  z-index: -1; /* Розміщує псевдоелемент позаду контенту */
+}
+
 .section {
   margin-bottom: 80px;
 }
-.logo{
+
+.logo {
   font-family: Impact, 'Anton', sans-serif;
   font-weight: 400;
   font-size: 32px;
@@ -121,6 +137,36 @@ body {
     max-width: 768px;
     padding: 0 32px;
   }
+
+  .backgroung-hero {
+    width: 768px;
+  }
+
+  .backgroung-hero::before {
+    width: 704px;
+    height: 896px;
+    background-image: url('/img/decor-tablet-hero.png');
+    z-index: 2; /* Розміщує псевдоелемент поверху контенту */
+
+  }
+
+  .backgroung-worktogether {
+    width: 768px;
+    position: relative;
+  }
+
+  .backgroung-worktogether::before {
+    width: 366px;
+    height: 260px;
+    content: '';
+    position: absolute;
+    top: -104px; /* Виступання на 100px вверх */
+    right: 0;
+    background-image: url('/img/decore-tablet-worktogether.png');
+    background-repeat: no-repeat right top;
+    z-index: -1; /* Розміщує псевдоелемент позаду контенту */
+  }
+
   .section {
     margin-bottom: 124px;
   }
@@ -136,6 +182,22 @@ body {
   .container {
     max-width: 1260px;
   }
+
+  .backgroung-hero,
+  .backgroung-worktogether {
+    width: 1260px;
+  }
+
+  .backgroung-hero::before {
+    width: 1216px;
+    height: 772px;
+    background-image: url('/img/decor-big-hero.png');
+  }
+
+  .backgroung-worktogether::before {
+    top: -144px;
+  }
+
   .section {
     margin-bottom: 164px;
   }
