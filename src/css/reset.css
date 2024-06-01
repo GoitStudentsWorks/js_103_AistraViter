@@ -65,19 +65,16 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-@media (min-width: 768px) {
-  body {
-  }
-}
-
 /* для тестування, чи ніхто не вийшов за границі секцій*/
 .container {
   border: 2px solid red;
 }
-.section, .for-test {
+.section,
+.for-test {
   border: 2px solid blue;
-  /*background-color: aqua; */
 }
+
+/*CONTAINER & SECTION*/
 .container {
   min-width: 320px;
   max-width: 360px;
@@ -106,33 +103,6 @@ body {
   padding-bottom: 80px;
 }
 
-.logo {
-  font-family: Impact, 'Anton', sans-serif;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 1;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  
-}
-.green-span {
-  color: #00b068;
-}
-
-.headline {
-  font-family: Impact, 'Anton', sans-serif;
-  font-weight: 400;
-  font-size: 52px;
-  line-height: 1.23077;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-}
-
-.text-center {
-  text-align: center;
-}
-
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -140,7 +110,7 @@ body {
   }
 
   .backgroung-hero {
-    width: 768px;
+    min-width: 704px;
   }
 
   .backgroung-hero::before {
@@ -148,11 +118,10 @@ body {
     height: 896px;
     background-image: url('/img/decor-tablet-hero.png');
     z-index: 2; /* Розміщує псевдоелемент поверху контенту */
-
   }
 
   .backgroung-worktogether {
-    width: 768px;
+    min-width: 366px;
     position: relative;
   }
 
@@ -170,12 +139,6 @@ body {
 
   .section {
     padding-bottom: 124px;
-  }
-  .headline {
-    font-size: 108px;
-    line-height: 1.15;
-    letter-spacing: 0.02em;
-    margin-bottom: 60px;
   }
 }
 
@@ -202,6 +165,46 @@ body {
   .section {
     padding-bottom: 164px;
   }
+}
+
+/*LOGO & HEADLINE*/
+
+.logo {
+  font-family: Impact, 'Anton', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.green-span {
+  color: #00b068;
+}
+
+.headline {
+  font-family: Impact, 'Anton', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23077;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .headline {
+    font-size: 108px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 1260px) {
   .headline {
     margin-bottom: 80px;
   }
