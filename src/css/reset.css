@@ -86,12 +86,12 @@ body {
 }
 
 .backgroung-hero {
-  width: 320px;
+  min-width: 320px;
   position: relative;
 }
 
 .backgroung-hero::before {
-  min-width: 320px;
+  width: 320px;
   height: 704px;
   content: '';
   position: absolute;
@@ -146,15 +146,16 @@ body {
     width: 704px;
     height: 896px;
     background-image: url('/img/decor-tablet-hero.png');
-    z-index: -1; /* Розміщує псевдоелемент позаду контенту */
+    z-index: 2; /* Розміщує псевдоелемент поверху контенту */
+
   }
 
-  .backgroung-top-right {
+  .backgroung-worktogether {
     width: 768px;
     position: relative;
   }
 
-  .backgroung-top-right::before {
+  .backgroung-worktogether::before {
     width: 366px;
     height: 260px;
     content: '';
@@ -182,11 +183,18 @@ body {
     max-width: 1260px;
   }
 
-  .backgroung-top-right {
+  .backgroung-hero,
+  .backgroung-worktogether {
     width: 1260px;
   }
 
-  .backgroung-top-right::before {
+  .backgroung-hero::before {
+    width: 1216px;
+    height: 772px;
+    background-image: url('/img/decor-big-hero.png');
+  }
+
+  .backgroung-worktogether::before {
     top: -144px;
   }
 
