@@ -1,0 +1,76 @@
+footer {padding-bottom: 24px;}
+.footer-lloyd {
+    font-family: "Impact", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #292929;
+    margin-bottom: 32px;
+  
+}
+.footer-jefferson {color: #00b068;
+}
+.footer-list {gap: 24px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.footer-list-element { width: 87px;
+    height: 24px;
+    font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #292929;
+  text-decoration: none;
+  font-style: normal;
+}
+.footer-paragraph {
+    text-align: center;
+    margin: 0 auto;
+width: 197px;
+}
+
+/* *****************TABLET********************* */
+
+@media screen and (min-width: 768px) {
+    
+    .footer-list {gap: 24px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+.footer-paragraph {
+    text-align: end;
+margin-right: 0;
+width: unset;
+}
+
+
+}
+
+/* ****************DESKTOP****************** */
+
+@media screen and (min-width: 1260px) { 
+.footer-flex{display: flex;
+justify-content: space-between;
+text-align: center;}
+
+.footer-list {
+    
+    /* gap: 40px;
+   /* margin-left: auto;
+    margin-bottom: 44px; */ 
+    padding: 0;
+    margin: 0;
+
+}
+.footer-list-element:last-child {
+    margin-right: 0;
+}
+
+}

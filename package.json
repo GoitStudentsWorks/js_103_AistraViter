@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "glob": "^8.1.0",
     "vite": "^4.5.2"
   },
@@ -16,7 +17,9 @@
   "license": "ISC",
   "dependencies": {
     "accordion-js": "^3.3.4",
+    "izitoast": "^1.4.0",
     "normalize.css": "^8.0.1",
+    "swiper": "^11.1.4",
     "vite-plugin-full-reload": "^1.0.5",
     "vite-plugin-html-inject": "^1.0.1"
   }

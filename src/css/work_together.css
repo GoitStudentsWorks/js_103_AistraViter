@@ -16,6 +16,15 @@
   margin-bottom: 40px;
 }
 
+.contacts-items{
+  display: flex;
+  align-items: center;
+}
+
+.address-icons {
+  margin-right: 16px;
+}
+
 .contacts-link {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -67,7 +76,6 @@
   color: #f0f0f0;
   border-radius: 8px;
   padding: 12px 24px;
-  /* width: 320px; */
   height: 48px;
   background: #00b068;
   border: none;
@@ -80,3 +88,47 @@
   background: #009156;
 }
 
+/* TABLET */
+
+@media (min-width: 768px) {
+  .worktogether-paragraph {
+    font-size: 20px;
+    width: 488px;
+  }
+
+  .contacts-list {
+    flex-direction: row;
+    gap: 19px;
+  }
+
+  .btn-message {
+    width: 173px;
+  }
+  }
+/* TABLET END */
+
+/* COMP */
+@media (min-width: 1260px) {
+  .wt-content-wrapper{
+      display: flex;
+      flex-direction: row;
+    }
+  
+  .wt-text-address-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 120px;
+      margin-right: 136px;
+    }
+
+  .contacts-list {
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .work-together-form{
+      width: 592px;
+    }
+}
+
+/* COMP END */
