@@ -1,26 +1,44 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('workTogetherForm');
+    const modalBackdrop = document.getElementById('modalBackdrop');
+    const closeModalButton = document.getElementById('closeModal');
 
-document.getElementById('workTogetherForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-            
-    const email = document.getElementById('userEmail').value;
-    const message = document.getElementById('userMessage').value;
-    const data = {
+    if (form) {
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const email = document.getElementById('userEmail').value;
+            const message = document.getElementById('userMessage').value;
+
+            if (!email || !message) {
+                alert('Please fill in both the email and message fields.');
+                return;
+            }
+
+            const data = {
                 email: email,
                 message: message
             };
 
-    fetch('https://portfolio-js.b.goit.study/api/requests', {
-            method: 'POST',
-            headers: {
+            fetch('https://portfolio-js.b.goit.study/api/requests', {
+                method: 'POST',
+                headers: {
                     'Content-Type': 'application/json'
                 },
-            body: JSON.stringify(data)
+                body: JSON.stringify(data)
             })
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.json();
+            })
             .then(data => {
+                console.log('Response data:', data);
+
                 if (data.success) {
                     openModal();
-                    document.getElementById('workTogetherForm').reset(); 
+                    form.reset();
                 } else {
                     alert('There was an error submitting your request. Please try again.');
                 }
@@ -30,12 +48,19 @@ document.getElementById('workTogetherForm').addEventListener('submit', function(
                 alert('There was an error submitting your request. Please try again.');
             });
         });
+    }
 
-function openModal() {
-  document.getElementById('modalBackdrop').classList.add('is-open');
-}
+    function openModal() {
+        if (modalBackdrop) {
+            modalBackdrop.classList.add('is-open');
+        }
+    }
 
-document.getElementById('closeModal').addEventListener('click', function() {
-            document.getElementById('modalBackdrop').classList.remove('is-open');
+    if (closeModalButton) {
+        closeModalButton.addEventListener('click', function() {
+            if (modalBackdrop) {
+                modalBackdrop.classList.remove('is-open');
+            }
+        });
+    }
 });
-
