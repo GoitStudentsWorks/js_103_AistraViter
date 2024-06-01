@@ -32,7 +32,7 @@
     margin-bottom: 32px;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1280px) {
     .benefits-block {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -63,4 +63,8 @@
         .title-benefits{
     margin-bottom:0 ;
         }
+}
+
+@media (min-width: 1280px) {
+
 }
