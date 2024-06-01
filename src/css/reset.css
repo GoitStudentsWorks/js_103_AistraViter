@@ -53,10 +53,8 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #f0f0f0;
 
   font-family: 'Poppins', 'Inter', sans-serif;
-  color: #292929;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -64,20 +62,28 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
-@media (min-width: 768px) {
-  body {
-  }
+body.light-theme{
+  background-color: #f0f0f0;
+  color: #292929;
 }
+
+body.dark-theme{
+  background-color: #292929;
+  color: #f0f0f0;
+}
+
+
 
 /* для тестування, чи ніхто не вийшов за границі секцій*/
 .container {
   border: 2px solid red;
 }
-.section {
+.section,
+.for-test {
   border: 2px solid blue;
-  /*background-color: aqua; */
 }
+
+/*CONTAINER & SECTION*/
 .container {
   min-width: 320px;
   max-width: 360px;
@@ -103,8 +109,74 @@ body {
 }
 
 .section {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  .backgroung-hero {
+    min-width: 600px;
+  }
+
+  .backgroung-hero::before {
+    width: 704px;
+    height: 896px;
+    background-image: url('/img/decor-tablet-hero.png');
+    z-index: 2; /* Розміщує псевдоелемент поверху контенту */
+  }
+
+  .backgroung-worktogether {
+    min-width: 366px;
+    position: relative;
+  }
+
+  .backgroung-worktogether::before {
+    width: 366px;
+    height: 260px;
+    content: '';
+    position: absolute;
+    top: -104px; /* Виступання на 100px вверх */
+    right: 0;
+    background-image: url('/img/decore-tablet-worktogether.png');
+    background-repeat: no-repeat right top;
+    z-index: -1; /* Розміщує псевдоелемент позаду контенту */
+  }
+
+  .section {
+    padding-bottom: 124px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .container {
+    max-width: 1260px;
+  }
+
+  .backgroung-hero{
+    min-width: 1100px;
+
+  }
+
+  .backgroung-hero::before {
+    width: 1216px;
+    height: 772px;
+    background-image: url('/img/decor-big-hero.png');
+  }
+
+  .backgroung-worktogether::before {
+    top: -144px;
+  }
+
+  .section {
+    padding-bottom: 164px;
+  }
+}
+
+/*LOGO & HEADLINE*/
 
 .logo {
   font-family: Impact, 'Anton', sans-serif;
@@ -133,43 +205,6 @@ body {
 }
 
 @media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
-  }
-
-  .backgroung-hero {
-    width: 768px;
-  }
-
-  .backgroung-hero::before {
-    width: 704px;
-    height: 896px;
-    background-image: url('/img/decor-tablet-hero.png');
-    z-index: 2; /* Розміщує псевдоелемент поверху контенту */
-
-  }
-
-  .backgroung-worktogether {
-    width: 768px;
-    position: relative;
-  }
-
-  .backgroung-worktogether::before {
-    width: 366px;
-    height: 260px;
-    content: '';
-    position: absolute;
-    top: -104px; /* Виступання на 100px вверх */
-    right: 0;
-    background-image: url('/img/decore-tablet-worktogether.png');
-    background-repeat: no-repeat right top;
-    z-index: -1; /* Розміщує псевдоелемент позаду контенту */
-  }
-
-  .section {
-    margin-bottom: 124px;
-  }
   .headline {
     font-size: 108px;
     line-height: 1.15;
@@ -179,28 +214,6 @@ body {
 }
 
 @media (min-width: 1260px) {
-  .container {
-    max-width: 1260px;
-  }
-
-  .backgroung-hero,
-  .backgroung-worktogether {
-    width: 1260px;
-  }
-
-  .backgroung-hero::before {
-    width: 1216px;
-    height: 772px;
-    background-image: url('/img/decor-big-hero.png');
-  }
-
-  .backgroung-worktogether::before {
-    top: -144px;
-  }
-
-  .section {
-    margin-bottom: 164px;
-  }
   .headline {
     margin-bottom: 80px;
   }

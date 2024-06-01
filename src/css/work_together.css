@@ -16,6 +16,15 @@
   margin-bottom: 40px;
 }
 
+.contacts-items{
+  display: flex;
+  align-items: center;
+}
+
+.address-icons {
+  margin-right: 16px;
+}
+
 .contacts-link {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -122,4 +131,4 @@
     }
 }
 
-/* OMP END */
+/* COMP END */
