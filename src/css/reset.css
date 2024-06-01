@@ -74,7 +74,7 @@ body {
 .container {
   border: 2px solid red;
 }
-.section {
+.section, .for-test {
   border: 2px solid blue;
   /*background-color: aqua; */
 }
@@ -103,7 +103,7 @@ body {
 }
 
 .section {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 .logo {
@@ -169,7 +169,7 @@ body {
   }
 
   .section {
-    margin-bottom: 124px;
+    padding-bottom: 124px;
   }
   .headline {
     font-size: 108px;
@@ -200,7 +200,7 @@ body {
   }
 
   .section {
-    margin-bottom: 164px;
+    padding-bottom: 164px;
   }
   .headline {
     margin-bottom: 80px;
