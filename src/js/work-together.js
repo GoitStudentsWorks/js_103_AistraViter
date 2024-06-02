@@ -1,66 +1,64 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('workTogetherForm');
-    const modalBackdrop = document.getElementById('modalBackdrop');
-    const closeModalButton = document.getElementById('closeModal');
+axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
 
-    if (form) {
-        form.addEventListener('submit', function(event) {
-            event.preventDefault();
 
-            const email = document.getElementById('userEmail').value;
-            const message = document.getElementById('userMessage').value;
+function handleSubmit(event) {
+  event.preventDefault();
 
-            if (!email || !message) {
-                alert('Please fill in both the email and message fields.');
-                return;
-            }
+  const email = document.querySelector('#user-email').value;
+  const message = document.querySelector('#user-message').value;
 
-            const data = {
-                email: email,
-                message: message
-            };
+  if (!email || !message) {
+    alert('Please fill in both the email and message fields.');
+    return;
+  }
 
-            fetch('https://portfolio-js.b.goit.study/api/requests', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(data)
-            })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok ' + response.statusText);
-                }
-                return response.json();
-            })
-            .then(data => {
-                console.log('Response data:', data);
+  const data = {
+    email: email,
+    comment: message, // змінено 'message' на 'comment'
+  };
 
-                if (data.success) {
-                    openModal();
-                    form.reset();
-                } else {
-                    alert('There was an error submitting your request. Please try again.');
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert('There was an error submitting your request. Please try again.');
-            });
-        });
+  // Використання async/await для відправки запиту
+  async function sendRequest(data) {
+    try {
+      const response = await axios.post('/requests', data, {
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+      });
+
+      // Перевірка наявності полів у відповіді
+      if (response.data.title && response.data.message) {
+        openModal();
+        form.reset();
+      } else {
+        alert('There was an error submitting your request. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('There was an error submitting your request. Please try again.');
     }
+  }
 
-    function openModal() {
-        if (modalBackdrop) {
-            modalBackdrop.classList.add('is-open');
-        }
-    }
+  sendRequest(data);
+}
 
-    if (closeModalButton) {
-        closeModalButton.addEventListener('click', function() {
-            if (modalBackdrop) {
-                modalBackdrop.classList.remove('is-open');
-            }
-        });
-    }
-});
+// Функція для відкриття модального вікна
+function openModal() {
+  const modalBackdrop = document.querySelector('.backdrop');
+  if (modalBackdrop) {
+    modalBackdrop.classList.add('is-open');
+  }
+}
+
+// Додавання обробника подій до форми
+const form = document.querySelector('#work-together-form');
+if (form) {
+  form.addEventListener('submit', handleSubmit);
+}
+
+// Додавання обробника подій до кнопки закриття модального вікна
+const closeModalButton = document.querySelector('#closeModal');
+if (closeModalButton) {
+  closeModalButton.addEventListener('click', closeModal);
+}
