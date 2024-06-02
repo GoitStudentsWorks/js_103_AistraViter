@@ -1,10 +1,11 @@
 axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
 
+
 function handleSubmit(event) {
   event.preventDefault();
 
-  const email = document.querySelector('#userEmail').value;
-  const message = document.querySelector('#userMessage').value;
+  const email = document.querySelector('#user-email').value;
+  const message = document.querySelector('#user-message').value;
 
   if (!email || !message) {
     alert('Please fill in both the email and message fields.');
@@ -60,7 +61,7 @@ function closeModal() {
 }
 
 // Додавання обробника подій до форми
-const form = document.querySelector('#workTogetherForm');
+const form = document.querySelector('#work-together-form');
 if (form) {
   form.addEventListener('submit', handleSubmit);
 }
