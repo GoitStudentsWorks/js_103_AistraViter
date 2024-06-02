@@ -52,7 +52,7 @@ html {
   margin-top: 24px;
 }
 
-.reviews-navigation-btn {
+.mySwiper .reviews-navigation-btn {
   display: inline-flex;
   border: 1px solid rgba(41, 41, 41, 0.1);
   border-radius: 8px;
@@ -62,16 +62,16 @@ html {
 }
 
 @media screen and (min-width: 768px) {
-  .reviews-item {
+  .mySwiper .reviews-item {
     width: 704px;
   }
 }
 @media screen and (min-width: 1260px) {
-  .reviews-item {
+  .mySwiper .reviews-item {
     width: 592px;
   }
 
-  .reviews-navigation-btn {
+  .mySwiper .reviews-navigation-btn {
     width: 48px;
     height: 48px;
   }
