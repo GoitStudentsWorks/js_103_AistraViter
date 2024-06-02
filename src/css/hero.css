@@ -93,7 +93,7 @@
 
 @media screen and (min-width: 768px) {
   .hero .container {
-    background-image: url(/img/bg-img-mob.png);
+    background-image: url(/img/bg-img-tablet.png);
   }
 
   .hero h1 {
@@ -140,7 +140,7 @@
   }
 
   .hero .container {
-    background-image: url(/img/bg-img-mob.png);
+    background-image: url(/img/bg-img-web.png);
   }
 
   .hero h1 {
