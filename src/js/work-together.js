@@ -26,7 +26,6 @@ function handleSubmit(event) {
         },
       });
 
-
       // Перевірка наявності полів у відповіді
       if (response.data.title && response.data.message) {
         openModal();
@@ -45,17 +44,9 @@ function handleSubmit(event) {
 
 // Функція для відкриття модального вікна
 function openModal() {
-  const modalBackdrop = document.querySelector('#modalBackdrop');
+  const modalBackdrop = document.querySelector('.backdrop');
   if (modalBackdrop) {
     modalBackdrop.classList.add('is-open');
-  }
-}
-
-// Функція для закриття модального вікна
-function closeModal() {
-  const modalBackdrop = document.querySelector('#modalBackdrop');
-  if (modalBackdrop) {
-    modalBackdrop.classList.remove('is-open');
   }
 }
 
