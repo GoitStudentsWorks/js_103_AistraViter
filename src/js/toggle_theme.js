@@ -7,7 +7,7 @@ body.classList.add(`${savedTheme}-theme`);
 
 // Set the toggle switch state based on the saved theme
 if (savedTheme === 'dark') {
-  themeToggle.checked = true;
+  toggleTheme.checked = true;
 }
 
 toggleTheme.addEventListener('change', () => {
