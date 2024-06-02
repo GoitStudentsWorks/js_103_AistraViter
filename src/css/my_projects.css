@@ -44,6 +44,9 @@
   text-align: right;
 }
 
+.vector-icon {
+  margin-left: 12px;
+}
 .load-more-btn-block {
   text-align: center;
 }
@@ -76,12 +79,12 @@
   .my-project-name {
     font-size: 36px;
     margin-bottom: 0px;
+    max-width: 80%;
   }
 
   .my-project-link-name-block {
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
 
   .load-more-btn {
