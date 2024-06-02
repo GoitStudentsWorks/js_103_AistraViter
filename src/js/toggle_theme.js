@@ -9,6 +9,7 @@ const imgClose = battonClose.querySelector('img');
 const battonOpenMobileMenu = document.getElementById('menuIcon');
 const burgerMobilemenu = battonOpenMobileMenu.querySelector('img');
 
+
 // Load saved theme from localStorage
 const savedTheme = localStorage.getItem('theme') || 'light';
 body.classList.add(`${savedTheme}-theme`);
@@ -16,12 +17,14 @@ body.classList.add(`${savedTheme}-theme`);
 // Set the toggle switch state based on the saved theme
 if (savedTheme === 'dark') {
   toggleTheme.checked = true;
+
   menu.classList.add('dark-theme-menu');
   imgClose.src = '../img/x dark-close.png';
   burgerMobilemenu.src = '../img/header-mobile-menu-white.png'
   listMobileMenus.forEach(menu => {
     menu.classList.add('link-nav-dark');
   });
+
 }
 
 toggleTheme.addEventListener('change', () => {
