@@ -1,4 +1,4 @@
-.hero {
+.hero .container {
   background-image: url(/img/bg-img-mob.png);
   background-repeat: no-repeat;
 }
@@ -50,7 +50,6 @@
   background-color: #00b068;
 }
 
-/* --------------------------------- */
 .hero-intro {
   font-weight: 400;
   font-size: 18px;
@@ -93,8 +92,8 @@
 /* ------------------------------Media 768------------------------------------ */
 
 @media screen and (min-width: 768px) {
-  .hero {
-    background-image: url(/img/bg-img-tablet.png);
+  .hero .container {
+    background-image: url(/img/bg-img-mob.png);
   }
 
   .hero h1 {
@@ -137,13 +136,11 @@
 
 @media screen and (min-width: 1280px) {
   .hero {
-    /* display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between; */
-
-    background-image: url(/img/bg-img-web.png);
     margin-bottom: 60px;
+  }
+
+  .hero .container {
+    background-image: url(/img/bg-img-mob.png);
   }
 
   .hero h1 {
