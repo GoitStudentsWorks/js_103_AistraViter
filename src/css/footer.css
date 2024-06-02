@@ -1,17 +1,5 @@
 footer {padding-bottom: 24px;}
-.footer-lloyd {
-    font-family: "Impact", sans-serif;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 100%;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: #292929;
-    margin-bottom: 32px;
-  
-}
-.footer-jefferson {color: #00b068;
-}
+
 .footer-list {gap: 24px;
     display: flex;
     flex-direction: column;
@@ -24,7 +12,6 @@ footer {padding-bottom: 24px;}
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #292929;
   text-decoration: none;
   font-style: normal;
 }
@@ -61,12 +48,7 @@ justify-content: space-between;
 text-align: center;}
 
 .footer-list {
-    
-    /* gap: 40px;
-   /* margin-left: auto;
-    margin-bottom: 44px; */ 
     padding: 0;
-    margin: 0;
 
 }
 .footer-list-element:last-child {
