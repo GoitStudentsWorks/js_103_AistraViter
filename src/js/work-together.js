@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('workTogetherForm');
     const modalBackdrop = document.getElementById('modalBackdrop');
     const closeModalButton = document.getElementById('closeModal');
