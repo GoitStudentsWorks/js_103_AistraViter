@@ -6,7 +6,8 @@ const battonClose = document.getElementById('closeIcon');
 const imgClose = battonClose.querySelector('img');
 
 // Заменить изображение
-imgClose.src = '../img/новое_изображение.png';
+imgClose.src = '';
+
 // Load saved theme from localStorage
 const savedTheme = localStorage.getItem('theme') || 'light';
 body.classList.add(`${savedTheme}-theme`);
