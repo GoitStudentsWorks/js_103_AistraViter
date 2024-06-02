@@ -1,8 +1,6 @@
 .hero {
   background-image: url(/img/bg-img-mob.png);
   background-repeat: no-repeat;
-  /* background-position-x: right;
-  background-position-y: top; */
 }
 
 .hero h1 {
@@ -25,13 +23,17 @@
   height: 92px;
   margin-bottom: 40px;
   border: none;
-  z-index: 1;
+  z-index: -1;
   position: relative;
   text-transform: uppercase;
   text-align: left;
   font-size: 18px;
+  background: transparent;
 }
 
+.dark-theme .hero-btn {
+  color: #f0f0f0;
+}
 .hero-btn::after {
   content: '';
   position: absolute;
@@ -42,6 +44,10 @@
   top: 0;
   right: 0;
   z-index: -1;
+}
+
+.dark-theme .hero-btn::after {
+  background-color: #00b068;
 }
 
 /* --------------------------------- */
@@ -111,13 +117,6 @@
   }
 
   .hero-btn {
-    width: 320px;
-    height: 92px;
-    border: none;
-    z-index: 1;
-    position: relative;
-    text-transform: uppercase;
-    text-align: left;
     font-size: 20px;
   }
 
