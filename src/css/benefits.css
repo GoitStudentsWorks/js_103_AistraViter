@@ -66,5 +66,59 @@
 }
 
 @media (min-width: 1280px) {
+.benefits-block{
+    margin-top: -108px;
+}
 
+        .benefits-block {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, auto);
+            gap: 32px;
+        }
+    
+        .benefits-block li:nth-child(1) {
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+        }
+    
+        .benefits-block li:nth-child(2) {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+    
+        .benefits-block li:nth-child(3) {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+    
+        .benefits-block li:nth-child(4) {
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+        }
+    
+        .title-benefits {
+            margin-bottom: 0;
+        }
+  .background-benefits{
+      min-width: 526px;
+      position: relative;
+  }
+
+  .background-benefits::before {
+      width: 526px;
+      height: 408px;
+      content: '';
+      position: absolute;
+    background-position: top right;
+      top: -148px;
+      /* Виступання на 100px вверх */
+      right: 0;
+      background-image: url('/img/decore-tablet-worktogether.png');
+      background-repeat: no-repeat;
+      z-index: -1;
+    background-size: 526px auto;
+      /* Розміщує псевдоелемент позаду контенту */
+      margin-right: 32px;
+  }
 }
