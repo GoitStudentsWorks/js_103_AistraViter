@@ -31,12 +31,12 @@ const createMarkup = cards => {
   return cards.reduce((html, card) => {
     return (
       html +
-      `<li class="reviews-item swiper-slide">
+      `<li class="reviews-item swiper-slide"><div class="jjj">
     <p class="reviews-text">${card.review}</p>
     <div class="reviewer">
     <img src="${card.avatar_url}" alt="${card.author}" class="reviewer-img">
     <h3 class="reviewer-name">${card.author}</h3>
-    </div>
+    </div></div>
     </li>`
     );
   }, ``);

@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
     // Показати меню
     menuIcon.addEventListener('click', () => {
+      
       menu.classList.add('active');
     });
   
