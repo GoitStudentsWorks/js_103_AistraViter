@@ -23,6 +23,8 @@
   padding: 48px 32px 48px 32px;
   border-radius: 16px;
   background: rgb(240, 240, 240);
+  z-index: 9999; /* Розміщує псевдоелемент поверху контенту */
+
 }
 .close {
   position: absolute;

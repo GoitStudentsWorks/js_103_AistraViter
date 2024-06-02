@@ -14,11 +14,13 @@ body.classList.add(`${savedTheme}-theme`);
 // Set the toggle switch state based on the saved theme
 if (savedTheme === 'dark') {
   toggleTheme.checked = true;
+
   menu.classList.add('dark-theme-menu');
   imgClose.src = '../img/x dark-close.png';
   listMobileMenus.forEach(menu => {
     menu.classList.add('link-nav-dark');
   });
+
 }
 
 toggleTheme.addEventListener('change', () => {

@@ -1,17 +1,5 @@
 footer {padding-bottom: 24px;}
-.footer-lloyd {
-    font-family: "Impact", sans-serif;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 100%;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: #292929;
-    margin-bottom: 32px;
-  
-}
-.footer-jefferson {color: #00b068;
-}
+
 .footer-list {gap: 24px;
     display: flex;
     flex-direction: column;
@@ -28,6 +16,12 @@ footer {padding-bottom: 24px;}
   text-decoration: none;
   font-style: normal;
 }
+.footer-list-element:hover {
+    color: #00b068;
+  }
+
+
+
 .footer-paragraph {
     text-align: center;
     margin: 0 auto;
@@ -67,6 +61,7 @@ text-align: center;}
     margin-bottom: 44px; */ 
     padding: 0;
     margin: 0;
+    text-align: right;
 
 }
 .footer-list-element:last-child {
