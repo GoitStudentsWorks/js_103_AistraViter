@@ -1,6 +1,15 @@
-.header {
+.header-section {
   padding: 20px 0;
 }
+.logo-mobile {
+  font-size: 24px;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 
 .mobile {
   position: absolute;
@@ -8,14 +17,10 @@
   left: 20px;
 }
 
-.navigation {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
 .menu-icon {
   all: initial;
+  display: inline;
 }
 
 .close-menu {

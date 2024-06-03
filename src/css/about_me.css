@@ -1,9 +1,3 @@
-/* .about-section {
-  margin: 0 auto;
-  padding-top: 80px;
-  padding-bottom: 80px;
-} */
-
 .imgclass {
   border-radius: 21px;
   margin-bottom: 40px;
@@ -40,6 +34,7 @@
   margin-bottom: 12px;
 }
 
+
 .educ::before {
   content: '•'; /* Устанавливаем контент точки */
   color: #00b068; /* Устанавливаем цвет точки */
@@ -48,6 +43,7 @@
   text-align: center; /* Выравниваем текст по центру */
   margin-right: 5px; /* Отступ справа от точки */
 }
+
 
 /* *******************MOBILE******************* */
 /* @media screen and (min-width: 360px) {
@@ -88,9 +84,9 @@
     gap: 32px;
   }
 
-  .row {
+  /* .row {
     margin-bottom: 60px;
-  }
+  } */
 
   .two {
     width: 336px;
@@ -113,8 +109,12 @@
   .about-p {
     width: 336px;
   }
-
-
+  .educ {
+    margin-bottom: 16px;
+  }
+  .educ:last-child {
+    margin-bottom: 0; /* убираем нижний отступ */
+  }
 }
 
 /* ****************DESKTOP****************** */
@@ -138,7 +138,7 @@
     margin-left: 208px;
     width: 384px;
     height: 448px;
-    margin-right: 0;
+    /* margin-right: 0; */
   }
   .edurol {
     margin-left: 208px;
@@ -160,123 +160,10 @@
   .role {
     margin-left: 136px;
   }
-}
-/* @media (min-resolution: 192dpi) {
-    .hero-section {
-      background-image: linear-gradient(
-          360deg,
-          #11131f 15.05%,
-          rgba(17, 19, 31, 0.39) 75.3%,
-          rgba(17, 19, 31, 0) 98.27%
-        ),
-        url(../img/img-hero/yacht-bg-desktop-2x.jpg);
-    }
+  .educ {
+    margin-bottom: 16px;
   }
-} */
-
-/*#region media*/
-/* @media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
-  }
-  .menu-item {
-    display: flex;
-    gap: 4px;
-  }
-  .contacts-menu {
-    display: flex;
-  }
-
-  .menu-open-btn {
-    display: none;
-  }
-  .mob-menu {
-    display: none;
-  }
-  .logo {
-    font-size: 20px;
-    line-height: 1.21;
-  }
-  .linkssocial {
-    display: flex;
-  }
-  .menu {
-    padding: 4px 28px;
-  }
-  .page-header {
-    width: 704px;
-    top: 32px;
+  .educ:last-child {
+    margin-bottom: 0; /* убираем нижний отступ */
   }
 }
-
-@media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-    padding: 0 100px;
-  }
-  .menu-item {
-    display: flex;
-    gap: 4px;
-  }
-  .contacts-menu {
-    display: flex;
-  }
-
-  .menu-open-btn {
-    display: none;
-  }
-  .mob-menu {
-    display: none;
-  }
-  .logo {
-    font-size: 20px;
-    line-height: 1.21;
-  }
-  .linkssocial {
-    display: flex;
-  }
-  .menu {
-    padding: 4px 28px;
-  }
-  .page-header {
-    width: 1080px;
-    top: 32px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1440px;
-    padding: 0 100px;
-  }
-  .menu-item {
-    display: flex;
-    gap: 4px;
-  }
-  .contacts-menu {
-    display: flex;
-  }
-
-  .menu-open-btn {
-    display: none;
-  }
-  .mob-menu {
-    display: none;
-  }
-  .logo {
-    font-size: 20px;
-    line-height: 1.21;
-  }
-  .linkssocial {
-    display: flex;
-  }
-  .menu {
-    padding: 4px 28px;
-  }
-  .page-header {
-    width: 1080px;
-    top: 32px;
-  }
-} */
-
-/*#endregion*/

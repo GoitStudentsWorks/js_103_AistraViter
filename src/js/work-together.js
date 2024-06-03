@@ -1,5 +1,5 @@
+import { addListener } from './modal_worktogether';
 axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
-
 
 function handleSubmit(event) {
   event.preventDefault();
@@ -14,7 +14,7 @@ function handleSubmit(event) {
 
   const data = {
     email: email,
-    comment: message, 
+    comment: message,
   };
 
   async function sendRequest(data) {
@@ -42,6 +42,7 @@ function handleSubmit(event) {
 }
 
 function openModal() {
+  addListener();
   const modalBackdrop = document.querySelector('.backdrop');
   if (modalBackdrop) {
     modalBackdrop.classList.add('is-open');
@@ -58,17 +59,31 @@ if (closeModalButton) {
   closeModalButton.addEventListener('click', closeModal);
 }
 
-// Текст який вилазе якщо користува неправильно вводе почту
+// Неправильна почта та інпут
+document.addEventListener('DOMContentLoaded', function () {
+  const emailInput = document.getElementById('user-email');
+  const emailError = document.getElementById('email-error');
+  const emailPattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 
-document.getElementById('work-together-form').addEventListener('submit', function(event) {
-    const emailInput = document.getElementById('user-email');
-    const emailError = document.getElementById('email-error');
-    const emailPattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
-
-    if (!emailPattern.test(emailInput.value)) {
-        event.preventDefault();
-        emailError.style.display = 'block'; 
+  emailInput.addEventListener('input', function () {
+    if (emailPattern.test(emailInput.value)) {
+      emailInput.classList.remove('invalid');
+      emailInput.classList.add('valid');
+      emailError.style.display = 'none';
     } else {
-        emailError.style.display = 'none'; 
+      emailInput.classList.remove('valid');
+      emailInput.classList.add('invalid');
+      emailError.style.display = 'block';
     }
+  });
+
+  document
+    .getElementById('work-together-form')
+    .addEventListener('submit', function (event) {
+      if (!emailPattern.test(emailInput.value)) {
+        event.preventDefault();
+        emailInput.classList.add('invalid');
+        emailError.style.display = 'block';
+      }
+    });
 });
