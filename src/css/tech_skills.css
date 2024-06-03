@@ -1,6 +1,6 @@
 
 .marquee {
-  height: 128px;
+  /* height: 128px; */
   overflow: hidden;
   text-transform: uppercase;
     position: relative; /* Добавляем позиционирование для псевдоэлемента */
@@ -15,35 +15,34 @@
   height: 100%; 
   background-color: #bcdfd1;
   z-index: -1; /* Устанавливаем нижний слой */
-  transform: skewY(1deg); /* Применяем наклон к фону */
+  /* transform: skewY(1deg);  */
 }
 
 
 .marquee__inner {
   display: flex;
-  transform: skewY(1deg); /* Применяем наклон к родительскому элементу */
+  transform: skewY(1deg); 
 }
 
 .marquee__line {
   display: flex;
-
   flex-shrink: 0;
   margin: 0;
-  padding: 10px 15px;
+  padding: 0px 0px 32px 0;
   min-width: auto;
   white-space: nowrap;
   animation-name: marqueeLine;
-  animation-duration: 10s;
+  animation-duration: 20s;
   animation-timing-function: linear; 
   animation-iteration-count: infinite;
-  transform: skewY(1deg); /* Применяем обратный наклон к дочерним элементам */
+  transform: skewY(1deg);
 }
-.temclass{
-  transform: skewY(2deg); /* Применяем обратный наклон к дочерним элементам */
+.itemclass{
+  animation-duration: 10s;
 
 }
 .rotation{
-  transform: skewY(2deg); /* Применяем наклон к родительскому элементу */
+  transform: skewY(2deg); 
 
 }
 .green::before {
@@ -55,11 +54,10 @@
   height: 100%; 
   background-color: #E4E5E6;
   z-index: -1; /* Устанавливаем нижний слой */
-  transform: skewY(2deg); /* Применяем наклон к фону */
+  transform: skewY(2deg);
 }
 .skills_item {
   padding-top: 40px;
-  font-family: Poppins;
   font-weight: 500;
   font-size: 36px;
   line-height: 48px;
