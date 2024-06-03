@@ -4,6 +4,13 @@
 .logo-mobile {
   font-size: 24px;
 }
+
+@media (min-width: 768px) {
+  .logo-mobile {
+    font-size: 32px;
+  }
+  }
+
 .navigation {
   display: flex;
   align-items: center;
