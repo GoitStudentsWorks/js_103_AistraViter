@@ -4,21 +4,6 @@
   padding-bottom: 80px;
 } */
 
-.about-h {
-  font-family: Impact;
-  font-weight: 400;
-  font-size: 52px;
-  line-height: 64px;
-  letter-spacing: 0.03em;
-  text-align: left;
-  color: #292929;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-}
-
-.me-span {
-  color: #00b068;
-}
 .imgclass {
   border-radius: 16px;
   margin-bottom: 40px;
@@ -34,18 +19,13 @@
   line-height: 40px;
   letter-spacing: 0.03em;
   text-align: left;
-  color: #292929;
   text-transform: uppercase;
   margin-bottom: 32px;
 }
 
 .about-p {
-  font-family: Poppins;
   font-weight: 300;
   font-size: 16px;
-  line-height: 24px;
-  color: #292929;
-  letter-spacing: 0.03em;
   text-align: left;
 }
 
@@ -55,12 +35,8 @@
 }
 
 .educ {
-  font-family: Poppins;
   font-weight: 300;
   font-size: 16px;
-  line-height: 24px;
-  color: #292929;
-  letter-spacing: 0.03em;
   margin-bottom: 12px;
 }
 
