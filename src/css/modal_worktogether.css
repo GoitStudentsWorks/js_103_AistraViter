@@ -16,7 +16,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 288px;
+  min-width: 256px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -44,12 +44,10 @@
   letter-spacing: 0.03em;
   text-align: center;
   text-transform: uppercase;
+  width: 256px;
 }
 .modal-paragraf {
   margin-top: 16px;
-  color: rgb(41, 41, 41);
-  font-family: Poppins;
-  font-size: 16px;
   font-weight: 300;
   line-height: 150%;
   letter-spacing: 0.03em;
@@ -65,5 +63,11 @@
   .modal {
     min-width: 364px;
     padding: 64px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .headline {
+    margin-bottom: 80px;
   }
 }
