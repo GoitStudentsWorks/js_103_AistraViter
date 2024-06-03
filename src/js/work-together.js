@@ -1,5 +1,5 @@
+import { addListener } from './modal_worktogether';
 axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
-
 
 function handleSubmit(event) {
   event.preventDefault();
@@ -14,7 +14,7 @@ function handleSubmit(event) {
 
   const data = {
     email: email,
-    comment: message, 
+    comment: message,
   };
 
   async function sendRequest(data) {
@@ -42,6 +42,7 @@ function handleSubmit(event) {
 }
 
 function openModal() {
+  addListener();
   const modalBackdrop = document.querySelector('.backdrop');
   if (modalBackdrop) {
     modalBackdrop.classList.add('is-open');
@@ -60,15 +61,17 @@ if (closeModalButton) {
 
 // Текст який вилазе якщо користува неправильно вводе почту
 
-document.getElementById('work-together-form').addEventListener('submit', function(event) {
+document
+  .getElementById('work-together-form')
+  .addEventListener('submit', function (event) {
     const emailInput = document.getElementById('user-email');
     const emailError = document.getElementById('email-error');
     const emailPattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 
     if (!emailPattern.test(emailInput.value)) {
-        event.preventDefault();
-        emailError.style.display = 'block'; 
+      event.preventDefault();
+      emailError.style.display = 'block';
     } else {
-        emailError.style.display = 'none'; 
+      emailError.style.display = 'none';
     }
-});
+  });
