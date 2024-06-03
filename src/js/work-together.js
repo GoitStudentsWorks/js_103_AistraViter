@@ -59,19 +59,31 @@ if (closeModalButton) {
   closeModalButton.addEventListener('click', closeModal);
 }
 
-// Текст який вилазе якщо користува неправильно вводе почту
+// Неправильна почта та інпут
+document.addEventListener('DOMContentLoaded', function () {
+  const emailInput = document.getElementById('user-email');
+  const emailError = document.getElementById('email-error');
+  const emailPattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
 
-document
-  .getElementById('work-together-form')
-  .addEventListener('submit', function (event) {
-    const emailInput = document.getElementById('user-email');
-    const emailError = document.getElementById('email-error');
-    const emailPattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
-
-    if (!emailPattern.test(emailInput.value)) {
-      event.preventDefault();
-      emailError.style.display = 'block';
-    } else {
+  emailInput.addEventListener('input', function () {
+    if (emailPattern.test(emailInput.value)) {
+      emailInput.classList.remove('invalid');
+      emailInput.classList.add('valid');
       emailError.style.display = 'none';
+    } else {
+      emailInput.classList.remove('valid');
+      emailInput.classList.add('invalid');
+      emailError.style.display = 'block';
     }
   });
+
+  document
+    .getElementById('work-together-form')
+    .addEventListener('submit', function (event) {
+      if (!emailPattern.test(emailInput.value)) {
+        event.preventDefault();
+        emailInput.classList.add('invalid');
+        emailError.style.display = 'block';
+      }
+    });
+});

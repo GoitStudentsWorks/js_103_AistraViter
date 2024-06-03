@@ -45,13 +45,18 @@
       </div>
 
       <form class="work-together-form" id="work-together-form">
-        <input
-          class="user-email"
-          id="user-email"
-          name="email"
-          placeholder="Your email*"
-          required
-        />
+        <div class="input-wrapper">
+          <input
+            class="user-email"
+            id="user-email"
+            name="email"
+            placeholder="Your email*"
+            required
+          />
+          <svg class="email-check-icon" width="16" height="16">
+            <use href="img/symbol-defs.svg#icon-green-check-mark"></use>
+          </svg>
+        </div>
         <p id="email-error" style="color: #e74a3b; display: none">
           Invalid email, try again
         </p>
@@ -62,7 +67,6 @@
           placeholder="Message"
           required
         ></textarea>
-
         <button class="btn-message" id="sendButton" type="submit">
           Send Message
         </button>
