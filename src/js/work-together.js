@@ -14,10 +14,9 @@ function handleSubmit(event) {
 
   const data = {
     email: email,
-    comment: message, // змінено 'message' на 'comment'
+    comment: message, 
   };
 
-  // Використання async/await для відправки запиту
   async function sendRequest(data) {
     try {
       const response = await axios.post('/requests', data, {
@@ -27,7 +26,6 @@ function handleSubmit(event) {
         },
       });
 
-      // Перевірка наявності полів у відповіді
       if (response.data.title && response.data.message) {
         openModal();
         form.reset();
@@ -43,7 +41,6 @@ function handleSubmit(event) {
   sendRequest(data);
 }
 
-// Функція для відкриття модального вікна
 function openModal() {
   const modalBackdrop = document.querySelector('.backdrop');
   if (modalBackdrop) {
@@ -51,13 +48,11 @@ function openModal() {
   }
 }
 
-// Додавання обробника подій до форми
 const form = document.querySelector('#work-together-form');
 if (form) {
   form.addEventListener('submit', handleSubmit);
 }
 
-// Додавання обробника подій до кнопки закриття модального вікна
 const closeModalButton = document.querySelector('#closeModal');
 if (closeModalButton) {
   closeModalButton.addEventListener('click', closeModal);
