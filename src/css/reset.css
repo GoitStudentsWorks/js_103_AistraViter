@@ -79,8 +79,8 @@ body.dark-theme{
 .container {
   border: 2px solid red;
 }
-.section,
-.for-test {
+.header-section,
+.section {
   border: 2px solid blue;
 }
 */
