@@ -1,12 +1,27 @@
+
 .marquee {
   height: 128px;
   overflow: hidden;
   text-transform: uppercase;
-  background-color: #bcdfd1;
+    position: relative; /* Добавляем позиционирование для псевдоэлемента */
+
 }
+.marquee::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: #bcdfd1;
+  z-index: -1; /* Устанавливаем нижний слой */
+  transform: skewY(1deg); /* Применяем наклон к фону */
+}
+
 
 .marquee__inner {
   display: flex;
+  transform: skewY(1deg); /* Применяем наклон к родительскому элементу */
 }
 
 .marquee__line {
@@ -15,15 +30,32 @@
   flex-shrink: 0;
   margin: 0;
   padding: 10px 15px;
-  min-width: 100%;
+  min-width: auto;
   white-space: nowrap;
   animation-name: marqueeLine;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
+  animation-duration: 10s;
+  animation-timing-function: linear; 
   animation-iteration-count: infinite;
+  transform: skewY(1deg); /* Применяем обратный наклон к дочерним элементам */
 }
-.green {
-  background-color: #e4e5e6;
+.temclass{
+  transform: skewY(2deg); /* Применяем обратный наклон к дочерним элементам */
+
+}
+.rotation{
+  transform: skewY(2deg); /* Применяем наклон к родительскому элементу */
+
+}
+.green::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: #E4E5E6;
+  z-index: -1; /* Устанавливаем нижний слой */
+  transform: skewY(2deg); /* Применяем наклон к фону */
 }
 .skills_item {
   padding-top: 40px;
