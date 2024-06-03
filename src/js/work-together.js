@@ -57,3 +57,18 @@ const closeModalButton = document.querySelector('#closeModal');
 if (closeModalButton) {
   closeModalButton.addEventListener('click', closeModal);
 }
+
+// Текст який вилазе якщо користува неправильно вводе почту
+
+document.getElementById('work-together-form').addEventListener('submit', function(event) {
+    const emailInput = document.getElementById('user-email');
+    const emailError = document.getElementById('email-error');
+    const emailPattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+
+    if (!emailPattern.test(emailInput.value)) {
+        event.preventDefault();
+        emailError.style.display = 'block'; 
+    } else {
+        emailError.style.display = 'none'; 
+    }
+});

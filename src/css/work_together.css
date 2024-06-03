@@ -41,7 +41,7 @@
 .work-together-form {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  /* gap: 32px; */
 }
 
 .user-email, 
@@ -60,6 +60,7 @@
 
 .user-message {
   height: 128px;
+  margin-top: 32px;
 }
 
 .btn-message {
@@ -78,6 +79,7 @@
   cursor: pointer;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 32px;
 }
 
 .btn-message:hover{
