@@ -9,13 +9,15 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  z-index: 1;
 }
 .modal {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 288px;
+  min-width: 256px;
+  max-width: 492px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -23,8 +25,7 @@
   padding: 48px 32px 48px 32px;
   border-radius: 16px;
   background: rgb(240, 240, 240);
-  z-index: 9999; /* Розміщує псевдоелемент поверху контенту */
-
+  z-index: 9999;
 }
 .close {
   position: absolute;
@@ -43,12 +44,11 @@
   letter-spacing: 0.03em;
   text-align: center;
   text-transform: uppercase;
+  width: 256px;
 }
 .modal-paragraf {
+  color: #292929;
   margin-top: 16px;
-  color: rgb(41, 41, 41);
-  font-family: Poppins;
-  font-size: 16px;
   font-weight: 300;
   line-height: 150%;
   letter-spacing: 0.03em;
@@ -64,5 +64,9 @@
   .modal {
     min-width: 364px;
     padding: 64px;
+  }
+
+  .modal-header {
+    width: 364px;
   }
 }

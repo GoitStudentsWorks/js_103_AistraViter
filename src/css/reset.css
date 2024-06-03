@@ -75,7 +75,7 @@ body.dark-theme{
 
 
 
-/* для тестування, чи ніхто не вийшов за границі секцій*/
+/* для тестування, чи ніхто не вийшов за границі секцій
 .container {
   border: 2px solid red;
 }
@@ -83,6 +83,7 @@ body.dark-theme{
 .for-test {
   border: 2px solid blue;
 }
+*/
 
 /*CONTAINER & SECTION*/
 .container {
@@ -152,9 +153,9 @@ body.dark-theme{
   }
 }
 
-@media (min-width: 1260px) {
+@media (min-width: 1280px) {
   .container {
-    max-width: 1260px;
+    max-width: 1280px;
   }
 
   .backgroung-hero{
@@ -198,6 +199,7 @@ body.dark-theme{
   line-height: 1.23077;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: left;
   margin-bottom: 40px;
 }
 

@@ -36,6 +36,7 @@
   height: 100%;
   background-color: #fff;
   background-image: url(../img/decor-mobile-hero.png);
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;

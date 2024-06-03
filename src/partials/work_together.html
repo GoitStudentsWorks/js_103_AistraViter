@@ -1,7 +1,6 @@
 <section class="section" id="work-together-link">
-<div class="container backgroung-worktogether" id="contacts">
+  <div class="container backgroung-worktogether" id="contacts">
     <h2 id="work-together-link" class="headline">
-
       Let's
       <span class="green-span"
         >work<br />
@@ -49,12 +48,13 @@
         <input
           class="user-email"
           id="user-email"
-          type="email"
           name="email"
           placeholder="Your email*"
-          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
           required
         />
+        <p id="email-error" style="color: #e74a3b; display: none">
+          Invalid email, try again
+        </p>
         <textarea
           class="user-message"
           id="user-message"
@@ -69,6 +69,4 @@
       </form>
     </div>
   </div>
-
-  
 </section>

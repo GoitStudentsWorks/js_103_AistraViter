@@ -52,7 +52,7 @@
 
 @media (min-width: 1280px) {
 .benefits-block{
-    margin-top: -108px;
+    margin-top: -188px;
 }
 
         .benefits-block {
@@ -85,25 +85,23 @@
         .title-benefits {
             margin-bottom: 0;
         }
-  .background-benefits{
-      min-width: 526px;
-      position: relative;
-  }
+.background-benefits{
+    min-width: 526px;
+    position: relative;
+}
 
-  .background-benefits::before {
-      width: 526px;
-      height: 408px;
-      content: '';
-      position: absolute;
+.background-benefits::before {
+    width: 526px;
+    height: 408px;
+    content: '';
+    position: absolute;
     background-position: top right;
-      top: -148px;
-      /* Виступання на 100px вверх */
-      right: 0;
-      background-image: url('/img/decore-tablet-worktogether.png');
-      background-repeat: no-repeat;
-      z-index: -1;
+    top: -148px;
+    right: 0;
+    background-image: url('/img/decore-tablet-worktogether.png');
+    background-repeat: no-repeat;
+    z-index: -1;
     background-size: 526px auto;
-      /* Розміщує псевдоелемент позаду контенту */
-      margin-right: 32px;
-  }
+    margin-right: 32px;
+}
 }

@@ -11,6 +11,7 @@
 }
 
 .my-project-img {
+  border: none;
   border-radius: 16px;
   width: 100%;
   margin-bottom: 12px;
@@ -57,11 +58,33 @@
   text-transform: uppercase;
   border: none;
   border-bottom: 2px solid #00b068;
+  color: #292929;
+  background-color: transparent;
 }
 
 .load-more-btn:hover {
   color: #00b068;
 }
+
+/* Стилі для темної теми */
+
+body.dark-theme .my-project-link {
+  background-color: #2a2d32;
+}
+
+body.dark-theme .my-project-link:hover {
+  background-color: #3b3f45;
+}
+
+body.dark-theme .load-more-btn {
+  color: #f0f0f0;
+}
+
+body.dark-theme .load-more-btn:hover {
+  color: #00b068;
+}
+
+/* Tablet version */
 
 @media (min-width: 768px) {
   .my-project-list-item {
@@ -91,6 +114,8 @@
     font-size: 20px;
   }
 }
+
+/* Desktop version */
 
 @media (min-width: 1260px) {
   .my-project-list-item {
