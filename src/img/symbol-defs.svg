@@ -1,5 +1,8 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<symbol id="icon-arrow_right" viewBox="0 0 30 16">
+<path d="M1 7C0.447715 7 -4.82823e-08 7.44772 0 8C4.82823e-08 8.55228 0.447715 9 1 9L1 7ZM29.7071 8.7071C30.0976 8.31658 30.0976 7.68341 29.7071 7.29289L23.3431 0.92893C22.9526 0.538406 22.3195 0.538406 21.9289 0.92893C21.5384 1.31945 21.5384 1.95262 21.9289 2.34314L27.5858 8L21.9289 13.6569C21.5384 14.0474 21.5384 14.6805 21.9289 15.0711C22.3195 15.4616 22.9526 15.4616 23.3431 15.0711L29.7071 8.7071ZM1 9L29 9L29 7L1 7L1 9Z" fill="#00B068"/>
+</symbol>
 <symbol id="icon-button_up" viewBox="0 0 32 32">
 <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M22 19l-6-6-6 6"></path>
 </symbol>
@@ -68,7 +71,6 @@
 <symbol id="icon-Switch" viewBox="0 0 64 32">
 <path fill="#e4e5e6" d="M16 0h32c8.837 0 16 7.163 16 16s-7.163 16-16 16H16C7.163 32 0 24.837 0 16S7.163 0 16 0z" style="fill:var(--color1, #e4e5e6)"/>
 <path fill="#00b068" d="M29.333 16c0 7.364-5.97 13.333-13.333 13.333S2.667 23.363 2.667 16C2.667 8.636 8.637 2.667 16 2.667S29.333 8.637 29.333 16z" style="fill:var(--color2, #00b068)"/>
-</symbol>
 </symbol>
 </defs>
 </svg>

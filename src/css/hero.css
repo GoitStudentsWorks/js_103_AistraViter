@@ -20,16 +20,16 @@
 
 .hero-btn {
   width: 300px;
-  height: 92px;
+  padding: 30px 0;
   margin-bottom: 40px;
   border: none;
-  z-index: -1;
   position: relative;
   text-transform: uppercase;
   text-align: left;
   font-size: 18px;
   background: transparent;
-
+  /* scroll-behavior: smooth; */
+  display: inline-block;
 }
 
 .dark-theme .hero-btn {
@@ -41,15 +41,23 @@
   border-radius: 16px;
   width: 52%;
   height: 100%;
-  background: rgba(0, 176, 104, 0.2);
+  background-color: rgba(0, 176, 104, 0.2);
   top: 0;
   right: 0;
   z-index: -1;
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.hero-btn:hover::after {
+  background-color: rgba(0, 176, 104, 0.6);
 }
 
 .dark-theme .hero-btn::after {
-  background-color: #00b068;
+  background-color: rgba(20, 197, 124, 0.2);
+}
+
+.dark-theme .hero-btn:hover::after {
+  background-color: rgba(20, 197, 124, 0.6);
 }
 
 .hero-intro {
@@ -71,6 +79,11 @@
 .hero-soc-media {
   padding: 32px 0px;
   margin: 0px -20px;
+  background-color: #e4e5e6;
+}
+
+.dark-theme .hero-soc-media {
+  background-color: #2a2d32;
 }
 
 .hero-soc-media ul {
@@ -87,6 +100,11 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-soc-media ul li:hover {
+  color: #00b068;
 }
 
 /* ------------------------------Media 768------------------------------------ */
@@ -118,7 +136,6 @@
   .hero-btn {
     font-size: 20px;
     width: 320px;
-
   }
 
   .hero-btn::after {
