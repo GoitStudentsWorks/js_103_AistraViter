@@ -81,6 +81,12 @@
   text-decoration: none;
   padding-bottom: 24px;
 }
+
+.header-soc-link:hover {
+  color: #00b068;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .link-nav-dark {
   font-family: Poppins;
   color: white;
