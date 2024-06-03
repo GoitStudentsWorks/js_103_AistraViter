@@ -1,11 +1,5 @@
 .header-section {
-  padding: 20px 0;
-}
-
-.mobile {
-  position: absolute;
-  top: 20px;
-  left: 20px;
+  padding: 20px;
 }
 
 .navigation {
@@ -13,6 +7,14 @@
   align-items: center;
   justify-content: space-between;
 }
+
+
+.mobile {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
 
 .menu-icon {
   all: initial;
