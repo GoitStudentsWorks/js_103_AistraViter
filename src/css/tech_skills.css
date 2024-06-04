@@ -3,9 +3,11 @@
   /* height: 128px; */
   overflow: hidden;
   text-transform: uppercase;
+  margin: 0 -20px;
     position: relative; /* Добавляем позиционирование для псевдоэлемента */
 
 }
+
 .marquee::before {
   content: "";
   position: absolute;
@@ -93,3 +95,9 @@
     transform: translateX(-100%);
   }
 }
+
+@media screen and (min-width: 768px) {
+  .marquee {
+    margin: 0 -32px;
+
+  }}
