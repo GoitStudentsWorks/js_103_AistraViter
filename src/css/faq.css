@@ -72,7 +72,7 @@
     border: 1px solid #03b5d2;
 }
 
-.accordion button .accordion-title {}
+/* .accordion button .accordion-title {} */
 
 .accordion button .icon {
     display: inline-block;
@@ -86,10 +86,6 @@
     margin-top: 8px;
     margin-right: 8px;
 }
-
-.box {}
-
-.accordion-head {}
 
 .accordion button .icon::before {
     display: block;
