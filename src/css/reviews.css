@@ -65,7 +65,7 @@ html {
   display: flex;
   justify-content: flex-end;
   gap: 16px;
-  margin-top: 24px;
+  /* margin-top: 24px; */
 }
 
 .mySwiper .reviews-navigation-btn {
@@ -98,7 +98,7 @@ html {
     margin-top: 0;
   }
 }
-@media screen and (min-width: 1260px) {
+@media screen and (min-width: 1280px) {
   .mySwiper .reviews-item {
     width: 592px;
     height: 224px;
@@ -116,8 +116,6 @@ html {
   display: none;
 }
 
-
-/* Зміна кольору кнопки при натискані на неї */
 .swiper-button-prev:active {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #e4e5e6;
