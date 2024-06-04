@@ -34,6 +34,7 @@
 
 .accordion-title {
     font-family: "Poppins", sans-serif;
+
     font-weight: 400;
     font-size: 18px;
     line-height: 1.56;
@@ -46,6 +47,7 @@
     padding: 28px 24px;
     width: 320px;
     background: rgba(0, 176, 104, 0.2);
+
 }
 
 .accordion button {
