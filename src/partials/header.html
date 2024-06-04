@@ -1,49 +1,49 @@
 <header class="header-section">
   <div class="container">
     <nav class="navigation">
-      <a href="./index.html" class="logo logo-mobile"
-        >LLOYD<span class="green-span">JEFFERSON.</span></a
-      >
-
-      <!-- --------------------Меню для планшетів та десктопів------------------------- -->
-
-      <ul class="desktop-menu">
-        <li>
-          <label class="switch">
-            <input type="checkbox" id="toggle-theme" />
-            <span class="slider round"></span>
-          </label>
-        </li>
-
-        <li><a href="#about-me">About me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contacts">Contacts</a></li>
-      </ul>
-
-<!-- --------------------Мобільне меню------------------------- -->
-
-      <ul class="list menu" id="menu">
-        <a href="./index.html" class="logo"
+      <div class="upper-menue">
+        <a href="./index.html" class="logo logo-mobile"
           >LLOYD<span class="green-span">JEFFERSON.</span></a
         >
-        <button type="button" id="closeIcon" class="close-menu">
-          <img src="./img/white-close.png" alt="Close" />
+        <button type="button" id="menuIcon" class="menu-icon">
+          <svg width="20" height="20">
+            <use href="img/symbol-defs.svg#icon-up_arrow_visit"></use>
+          </svg>
         </button>
-        <li class="link-nav"><a href="#about-me">About me</a></li>
-        <li class="link-nav"><a href="#projects">Projects</a></li>
-        <li class="link-nav"><a href="#contacts">Contacts</a></li>
-      </ul>
 
-      <button type="button" id="menuIcon" class="menu-icon">
-        <svg width="20" height="20">
-          <use href="img/symbol-defs.svg#icon-up_arrow_visit"></use>
-        </svg>
-      </button>
-  
+        <!--   Меню для планшетів та десктопів   -->
+
+        <ul class="desktop-menu">
+          <li>
+            <label class="switch">
+              <input type="checkbox" id="toggle-theme" />
+              <span class="slider round"></span>
+            </label>
+          </li>
+
+          <li><a class="header-soc-link" href="#about-me">About me</a></li>
+          <li><a class="header-soc-link" href="#projects">Projects</a></li>
+          <li><a class="header-soc-link" href="#contacts">Contacts</a></li>
+        </ul>
+      </div>
+      <!--   Мобільне меню  -->
+
+      <div class="modal-menu" id="menu">
+        <div class="upper-menue">
+          <a href="./index.html" class="logo logo-mobile"
+            >LLOYD<span class="green-span">JEFFERSON.</span></a
+          >
+          <button type="button" id="closeIcon" class="close-menu">
+            <img src="./img/white-close.png" alt="Close" />
+          </button>
+        </div>
+
+        <ul class="list">
+          <li class="link-nav"><a href="#about-me">About me</a></li>
+          <li class="link-nav"><a href="#projects">Projects</a></li>
+          <li class="link-nav"><a href="#contacts">Contacts</a></li>
+        </ul>
+      </div>
     </nav>
   </div>
 </header>
-
-
-
-<!-- --------------------Мобільне меню------------------------- -->

@@ -1,6 +1,12 @@
 .hero .container {
   background-image: url(/img/bg-img-mob.png);
   background-repeat: no-repeat;
+  padding-top: 0px;
+}
+.hero-img-container {
+  padding: 96px 0 40px 0;
+  width: 105%;
+  display: block;
 }
 
 .hero h1 {
@@ -11,25 +17,53 @@
   letter-spacing: 0.01em;
   text-align: left;
   text-transform: uppercase;
-  margin-bottom: 40px;
-  padding-top: 112px;
+  margin: 0;
 }
+
+.hero-text-container {
+  min-width: 300px;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
 .hero h1 span {
   color: rgba(0, 176, 104, 1);
 }
 
-.hero-btn {
-  width: 300px;
-  padding: 30px 0;
-  margin-bottom: 40px;
-  border: none;
+.hero-btn-container {
   position: relative;
+  min-width: 300px;
+  max-width: 360px;
+  height: 92px;
+  display: flex;
+  justify-content: flex-start; /* Змінено на flex-start */
+  align-items: center;
+}
+
+.hero-btn-text {
+  z-index: 1;
+  font-size: 18px;
   text-transform: uppercase;
   text-align: left;
-  font-size: 18px;
+}
+.text-overlap {
+  position: absolute;
+  z-index: 2;
+}
+
+.hero-btn {
+  position: relative;
+  width: 165px;
+  height: 92px;
+  border: none;
   background: transparent;
+  margin-left: auto; /* Притискання прямокутника до правого краю */
+
   /* scroll-behavior: smooth; */
-  display: inline-block;
 }
 
 .dark-theme .hero-btn {
@@ -39,11 +73,11 @@
   content: '';
   position: absolute;
   border-radius: 16px;
-  width: 52%;
-  height: 100%;
+  width: 165px;
+  height: 92px;
   background-color: rgba(0, 176, 104, 0.2);
   top: 0;
-  right: 0;
+  left: 0;
   z-index: -1;
   transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -65,7 +99,6 @@
   font-size: 18px;
   line-height: 1.55556;
   text-transform: uppercase;
-  padding-bottom: 72px;
 }
 
 .hero-intro span {
@@ -118,13 +151,49 @@
     background-image: url(/img/bg-img-tablet.png);
   }
 
+  .hero-img-container {
+    padding: 0;
+    margin-top: 72px;
+    margin-bottom: 40px;
+    margin-left: 0;
+    width: 552px;
+    display: block;
+  }
+
+  .hero-text-container {
+    margin-top: 0px;
+    margin-left: 0;
+
+    width: 704px;
+    max-width: 704px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .hero-btn-container {
+    position: relative;
+    width: 416px;
+    max-width: 416px;
+  }
+
+  .hero-btn {
+    position: relative;
+    width: 261px;
+    height: 92px;
+  }
+
+  .hero-btn::after {
+    width: 261px;
+  }
+
   .hero h1 {
     font-family: Impact, 'Anton', sans-serif;
     font-weight: 400;
     font-size: 124px;
     line-height: 1.19355;
-    margin-top: 88px;
-    margin-bottom: 60px;
   }
 
   .hero-soc-media {
@@ -137,84 +206,50 @@
     gap: 40px;
   }
 
-  .hero-btn {
-    font-size: 20px;
-    width: 320px;
-  }
-
-  .hero-btn::after {
-    /* width: 261px;  */
-    width: 60%;
-    height: 100%;
-  }
-
   .hero-intro {
     font-weight: 400;
     font-size: 20px;
     line-height: 1.6;
-    margin-bottom: 104px;
   }
 }
 /* --------------------------Media screen 1260--------------------------------------- */
 
 @media screen and (min-width: 1280px) {
-  .hero {
-    margin-bottom: 60px;
-  }
-
   .hero .container {
     background-image: url(/img/bg-img-web.png);
   }
-
+  .hero-img-container {
+    width: 1216px;
+    height: 444px;
+    display: flex;
+    gap: 72px;
+    justify-content: space-between;
+  }
   .hero h1 {
+    width: 552px;
     padding: 0;
     margin: 0;
   }
 
-  .web-version {
-    display: flex;
-    padding-top: 88px;
-  }
-
-  .web-version h1 {
-    display: block;
-    flex-wrap: wrap;
-    margin-bottom: 80px;
-    width: 50%;
-    /* margin-right: 72px; */
-  }
-
   .hero-image {
-    display: flex;
-    width: 50%;
-    align-items: flex-start;
-  }
-
-  .hero-image img {
-    max-width: 100%;
+    display: inline-block;
+    width: 592px;
     border-radius: 10px;
   }
 
-  .web-btn {
+  .hero-text-container {
+    width: 1216px;
+    max-width: 1216px;
+    flex-direction: row;
+    height: 100%;
     display: flex;
-    padding-bottom: 96px;
+    gap: 136px;
+    padding-left: 72px;
   }
+
   .hero-intro {
-    width: 50%;
+    width: 592px;
   }
 
-  .hero-btn-container {
-    width: 50%;
-    text-align: center;
-  }
-
-  .hero-btn {
-    font-size: 20px;
-    line-height: 1.6;
-    width: 416px;
-  }
-
-  .hero-btn::after {
-    width: 60%;
-  }
+ 
 }

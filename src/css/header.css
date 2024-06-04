@@ -4,7 +4,14 @@
 .logo-mobile {
   font-size: 24px;
 }
-.navigation {
+
+@media (min-width: 768px) {
+  .logo-mobile {
+    font-size: 32px;
+  }
+  }
+
+.upper-menue {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,14 +38,17 @@
   right: 20px;
 }
 
-.menu {
+.modal-menu {
+  min-width: 320px;
+  max-width: 360px;
   margin: 0;
   padding: 0;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+
+  width: auto;
+  height: auto;
   background-color: #fff;
   background-image: url(../img/decor-mobile-hero.png);
   display: flex;
@@ -46,7 +56,10 @@
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease-in-out;
+ 
   transform: translateY(-100%);
+
+
 }
 
 .active {
@@ -81,6 +94,12 @@
   text-decoration: none;
   padding-bottom: 24px;
 }
+
+.header-soc-link:hover {
+  color: #00b068;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .link-nav-dark {
   font-family: Poppins;
   color: white;
@@ -105,7 +124,7 @@
   }
 }
 @media (min-width: 768px) {
-  .menu,
+  .modal-menu,
   .menu-icon {
     display: none;
   }

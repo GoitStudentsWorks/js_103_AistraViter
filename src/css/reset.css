@@ -9,6 +9,10 @@ p {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 p:last-child {
   margin-bottom: 0;
 }
@@ -75,7 +79,7 @@ body.dark-theme{
 
 
 
-/* для тестування, чи ніхто не вийшов за границі секцій*/
+/* для тестування, чи ніхто не вийшов за границі секцій
 .container {
   border: 2px solid red;
 }
@@ -84,7 +88,7 @@ body.dark-theme{
 .section {
   border: 2px solid blue;
 }
-
+*/
 
 /*CONTAINER & SECTION*/
 .container {
