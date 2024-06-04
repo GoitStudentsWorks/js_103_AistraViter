@@ -1,6 +1,8 @@
 
 .marquee {
   /* height: 128px; */
+  margin-left: -32px;
+  margin-right: -32px;
   overflow: hidden;
   text-transform: uppercase;
     position: relative; /* Добавляем позиционирование для псевдоэлемента */
