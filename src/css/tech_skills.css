@@ -44,7 +44,7 @@
 
 }
 .rotation{
-  transform: skewY(2deg); 
+  transform: skewY(1deg); 
 
 }
 .green::before {
