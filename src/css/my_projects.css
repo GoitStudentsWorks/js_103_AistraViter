@@ -35,6 +35,11 @@
   border-radius: 8px;
   background-color: #ccc;
   padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  width: 125px;
+  text-align: right;
+  
 }
 
 .my-project-link:hover {
