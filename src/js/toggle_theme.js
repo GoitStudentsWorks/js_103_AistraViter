@@ -1,6 +1,6 @@
 const toggleTheme = document.querySelector('#toggle-theme');
 const body = document.body;
-const menu = document.querySelector('.menu');
+const menu = document.querySelector('.modal-menu');
 const listMobileMenus = document.querySelectorAll('.link-nav');
 
 const battonClose = document.getElementById('closeIcon');
@@ -32,7 +32,7 @@ toggleTheme.addEventListener('change', () => {
     body.classList.remove('light-theme');
     body.classList.add('dark-theme');
     menu.classList.add('dark-theme-menu');
-    burgerMobilemenu.src = './img/header-mobile-menu-white.png'
+   // burgerMobilemenu.src = './img/header-mobile-menu-white.png'
     imgClose.src = './img/dark-close.png';
     listMobileMenus.forEach(menu => {
       menu.classList.add('link-nav-dark');
