@@ -20,7 +20,7 @@ if (savedTheme === 'dark') {
 
   menu.classList.add('dark-theme-menu');
   imgClose.src = './img/dark-close.png';
-  burgerMobilemenu.src = './img/header-mobile-menu-white.png'
+  //burgerMobilemenu.src = './img/header-mobile-menu-white.png'
   listMobileMenus.forEach(menu => {
     menu.classList.add('link-nav-dark');
   });
