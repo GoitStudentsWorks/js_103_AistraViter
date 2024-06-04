@@ -3,6 +3,9 @@ import 'accordion-js/dist/accordion.min.css';
 
 const items = document.querySelectorAll(".accordion button");
 
+items[0].setAttribute('aria-expanded', 'true');
+items[0].nextElementSibling.hidden = false;
+
 function toggleAccordion() {
     const itemToggle = this.getAttribute('aria-expanded');
     const content = this.nextElementSibling;
@@ -18,4 +21,4 @@ function toggleAccordion() {
     }
 }
 
-items.forEach(item => item.addEventListener('click', toggleAccordion)); 
+items.forEach(item => item.addEventListener('click', toggleAccordion));
