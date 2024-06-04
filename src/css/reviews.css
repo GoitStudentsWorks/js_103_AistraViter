@@ -8,12 +8,6 @@ html {
   box-sizing: inherit;
 }
 
-.reviewer-img {
-  border-radius: 24px;
-  width: 40px;
-  height: 40px;
-}
-
 .mySwiper .reviews-list {
   box-sizing: border-box;
 }
@@ -45,6 +39,12 @@ html {
   align-items: center;
 }
 
+.reviewer-img {
+  border-radius: 24px;
+  width: 40px;
+  height: 40px;
+}
+
 .reviewer-name {
   color: #292929;
   font-weight: 600;
@@ -67,6 +67,10 @@ html {
   gap: 16px;
   margin-top: 24px;
 }
+.reviews-navigation {
+  margin-top: 0px;
+
+}
 
 .mySwiper .reviews-navigation-btn {
   display: inline-flex;
@@ -77,6 +81,16 @@ html {
   height: 40px;
   position: static;
   margin-top: 24px;
+}
+
+.swiper-button-prev:active {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #e4e5e6;
+}
+
+.swiper-button-next:active {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #e4e5e6;
 }
 
 @media screen and (min-width: 768px) {
@@ -104,4 +118,16 @@ html {
 
 .is-hidden {
   display: none;
+}
+
+
+/* Зміна кольору кнопки при натискані на неї */
+.swiper-button-prev:active {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #e4e5e6;
+}
+
+.swiper-button-next:active {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #e4e5e6;
 }
