@@ -67,6 +67,10 @@ html {
   gap: 16px;
   margin-top: 24px;
 }
+.reviews-navigation {
+  margin-top: 0px;
+
+}
 
 .mySwiper .reviews-navigation-btn {
   display: inline-flex;
