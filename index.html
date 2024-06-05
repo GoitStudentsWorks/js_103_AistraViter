@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F16</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/png;base64,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" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" crossorigin src="/js_103_AistraViter/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/js_103_AistraViter/assets/vendor-b531c9a1.js">
+    <link rel="stylesheet" href="/js_103_AistraViter/assets/vendor-c36716e1.css">
+    <link rel="stylesheet" href="/js_103_AistraViter/assets/index-2c175e5f.css">
+  </head>
+
+  <body class="light-theme">
+    <header class="header-section">
+  <div class="container">
+    <nav class="navigation">
+      <div class="upper-menue">
+        <a href="./index.html" class="logo logo-mobile"
+          >LLOYD<span class="green-span">JEFFERSON.</span></a
+        >
+        <button type="button" id="menuIcon" class="menu-icon">
+          <svg width="20" height="20">
+            <use href="/js_103_AistraViter/assets/symbol-defs-acd9485f.svg#icon-up_arrow_visit"></use>
+          </svg>
+        </button>
+
+        <!--   Меню для планшетів та десктопів   -->
+
+        <ul class="desktop-menu">
+          <li>
+            <label class="switch">
+              <input type="checkbox" id="toggle-theme" />
+              <span class="slider round"></span>
+            </label>
+          </li>
+
+          <li>
+            <a
+              class="header-soc-link"
+              rel="noopener noreferrer nofollow"
+              href="#about-me"
+              >About me</a
+            >
+          </li>
+          <li>
+            <a
+              class="header-soc-link"
+              rel="noopener noreferrer nofollow"
+              href="#projects"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              class="header-soc-link"
+              rel="noopener noreferrer nofollow"
+              href="#contacts"
+              >Contacts</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!--   Мобільне меню  -->
+
+      <div class="modal-menu" id="menu">
+        <div class="upper-menue">
+          <a href="./index.html" class="logo logo-mobile"
+            >LLOYD<span class="green-span">JEFFERSON.</span></a
+          >
+          <button type="button" id="closeIcon" class="close-menu">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADzSURBVHgB7ZZNEoMgDIWDF6nd6S3sydtb6K70JDRxXFgGEvI2dcGbYWAU8j75CRJ1dXX9WUF7OU3Te+8UwrKu64cc4rEjV09pb9t2r/UbtCBsLGVMKb3meb6R01zGSgxNKgAbP7iKHoizuYzlsmj9dbwjIAeTqRSIqC1HydxaOhOgFQIxbwawIFBzF0ANguuAmrsBShB7ENAcAsghjkcRMRcNBIq/vtj2CloC+l1zkXlEa3LNQGm3I8nqLNcxpMpu9yQrCKDlnKMQTamYGs85AmFdxyM5k4wXwtqE7gzHd3/MN6bW3/wfICDJZBDU1dV1aX0Bb5jZUZAT160AAAAASUVORK5CYII=" alt="Close" />
+          </button>
+        </div>
+
+        <ul class="list">
+          <li class="link-nav"><a href="#about-me">About me</a></li>
+          <li class="link-nav"><a href="#projects">Projects</a></li>
+          <li class="link-nav"><a href="#contacts">Contacts</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+    <main>
+      <section class="section hero">
+  <div class="container">
+    <div class="hero-img-container">
+      <h1 class="headline">Hello, I am <span>Fullstack developer</span></h1>
+      <div class="hero-image">
+        <img
+          srcset="/js_103_AistraViter/assets/hero-portrait-web-845a7adb.png 1x, /js_103_AistraViter/assets/hero-portrait-web-2x-ec837e1f.png 2x"
+          src="/js_103_AistraViter/assets/hero-portrait-web-845a7adb.png"
+          alt="hero-portrait-web"
+        />
+      </div>
+    </div>
+
+    <div class="hero-text-container">
+      <div class="hero-btn-container">
+        <div class="text-overlap">
+          <a class="hero-btn-text" href="#work-together-link">
+            <svg
+              class="btn-svg"
+              style="margin-right: 12px"
+              width="30"
+              height="16"
+              fill="none"
+            >
+              <use href="/js_103_AistraViter/assets/symbol-defs-acd9485f.svg#icon-arrow_right"></use>
+            </svg>
+            Order the project
+          </a>
+        </div>
+        <div class="hero-btn"></div>
+      </div>
+
+      <p class="hero-intro">
+        I work with people all over the world to create
+        <span>impressive</span> and <span>functional websites</span> that
+        reflect each client’s unique personality.
+      </p>
+    </div>
+  </div>
+  <div class="hero-soc-media">
+    <ul>
+      <li>
+        <a
+          rel="noopener noreferrer nofollow"
+          target="_blank"
+          href="https://www.instagram.com/goitclub/"
+          >Instagram</a
+        >
+      </li>
+      <li>
+        <a
+          rel="noopener noreferrer nofollow"
+          target="_blank"
+          href="https://www.facebook.com/goITclub/"
+          >Facebook</a
+        >
+      </li>
+      <li>
+        <a
+          rel="noopener noreferrer nofollow"
+          target="_blank"
+          href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+          >Linkedin</a
+        >
+      </li>
+      <li>
+        <a
+          rel="noopener noreferrer nofollow"
+          target="_blank"
+          href="https://aistraviter.github.io/f16/#work-together-link"
+          >GitHub</a
+        >
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="section">
+  <div class="container backgroung-about" id="about-me">
+    <div class="square-background"></div>
+
+    <h2 class="headline">About <span class="green-span">me</span></h2>
+    <div class="marginclass one">
+      <img
+        class="imgclass"
+        srcset="/js_103_AistraViter/assets/portrait-young-readhead-man-white-tshirt-holding-mobile-1x-0eb795b2.jpg 1x, /js_103_AistraViter/assets/portrait-young-readhead-man-white-tshirt-holding-mobile-1x-0eb795b2.jpg 2x"
+        src="/js_103_AistraViter/assets/portrait-young-readhead-man-white-tshirt-holding-mobile-1x-0eb795b2.jpg"
+        alt="portrait-young-readhead-man-white-tshirt-holding-laptop"
+        width="320"
+      />
+      <div class="row">
+        <h3 class="htwoclass bio">Bio</h3>
+        <p class="about-p">
+          I'm Lloyd Jefferson, a talented programmer specializing in software
+          development. My expertise spans various programming languages and
+          technologies, and I am dedicated to continually enhancing my skills. I
+          thrive on seeking unconventional and creative solutions to problems,
+          leveraging a high level of analytical skills to effectively tackle
+          even the most challenging tasks.
+        </p>
+        <p class="about-p two">
+          Adaptable to both independent and team-oriented work, I collaborate
+          seamlessly with colleagues, exchanging ideas and finding optimal
+          solutions. My professional maturity enables me to navigate challenges
+          and stressful situations with a calm demeanor, maintaining a
+          consistently high quality of work. Committed to self-improvement, I
+          actively engage in studying new technologies and practices to stay
+          current with the latest innovations in the field.
+        </p>
+      </div>
+    </div>
+    <div class="edurol">
+      <div class="marginclass two">
+        <h3 class="htwoclass">Education</h3>
+        <ul class="custom-list">
+          <li class="educ">
+            2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
+          </li>
+          <li class="educ">
+            2019 - 2020 / Advanced Web Development Certificate, GoIT IT School,
+            New York
+          </li>
+          <li class="educ">
+            2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+          </li>
+        </ul>
+      </div>
+      <div class="marginclass two role">
+        <h3 class="htwoclass">Role</h3>
+        <ul class="custom-list">
+          <li class="educ">Frontend development</li>
+          <li class="educ">HeadlessCMS, Wordpress</li>
+          <li class="educ">Blender (enjoy)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section">
+    <h2 hidden>Tech skills</h2>
+
+    <div class="marquee">
+      <div class="marquee__inner">
+        <ul class="marquee__line">
+          <li class="skills_item">HTML/CSS</li>
+          <li class="skills_item">JavaScript</li>
+          <li class="skills_item">React</li>
+          <li class="skills_item">Node. js</li>
+          <li class="skills_item">React Native</li>
+          <li class="skills_item">Typescript</li>
+        </ul>
+        <ul class="marquee__line">
+          <li class="skills_item">HTML/CSS</li>
+          <li class="skills_item">JavaScript</li>
+          <li class="skills_item">React</li>
+          <li class="skills_item">Node. js</li>
+          <li class="skills_item">React Native</li>
+          <li class="skills_item">Typescript</li>
+        </ul>
+      </div>
+    </div>
+    <div class="marquee green">
+      <div class="marquee__inner rotation">
+        <ul class="marquee__line itemclass">
+          <li class="skills_item color">HTML/CSS</li>
+          <li class="skills_item color">JavaScript</li>
+          <li class="skills_item color">React</li>
+          <li class="skills_item color">Node. js</li>
+          <li class="skills_item color">React Native</li>
+          <li class="skills_item color">Typescript</li>
+        </ul>
+        <ul class="marquee__line itemclass">
+          <li class="skills_item color">HTML/CSS</li>
+          <li class="skills_item color">JavaScript</li>
+          <li class="skills_item color">React</li>
+          <li class="skills_item color">Node. js</li>
+          <li class="skills_item color">React Native</li>
+          <li class="skills_item color">Typescript</li>
+        </ul>
+      </div>
+    </div>
+</section>
+
+      <section class="section">
+  <div class="container" id="projects">
+    <h2 class="headline text-center">
+      My <span class="green-span">projects</span>
+    </h2>
+
+    <ul class="my-project-list">
+      <li class="my-project-list-item">
+        <img
+          srcset="/js_103_AistraViter/assets/my-projects-1-1x-min-7f1522bf.jpg 1x, /js_103_AistraViter/assets/my-projects-1-2x-min-64309f41.jpg 2x"
+          src="/js_103_AistraViter/assets/my-projects-1-1x-min-7f1522bf.jpg"
+          class="my-project-img"
+          alt="Power pulse webservice project"
+        />
+        <p class="my-project-technologies">React, JavaScript, Node JS, Git</p>
+        <div class="my-project-link-name-block">
+          <h3 class="my-project-name">Power pulse webservice</h3>
+          <div class="my-project-link-block">
+            <a
+              href="https://github.com/AistraViter/f16"
+              class="my-project-link"
+              target="_blank"
+            >
+              Visit
+              <svg width="24" height="24" class="vector-icon">
+                <use href="/js_103_AistraViter/assets/symbol-defs-acd9485f.svg#icon-up_arrow_visit"></use>
+
+              </svg>
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <li class="my-project-list-item">
+        <img
+          srcset="/js_103_AistraViter/assets/my-projects-2-1x-min-05345e46.jpg 1x, /js_103_AistraViter/assets/my-projects-2-2x-min-546f4978.jpg 2x"
+          src="/js_103_AistraViter/assets/my-projects-2-1x-min-05345e46.jpg"
+          class="my-project-img"
+          alt="Mimino website project"
+        />
+        <p class="my-project-technologies">React, JavaScript, Node JS, Git</p>
+        <div class="my-project-link-name-block">
+          <h3 class="my-project-name">Mimino website</h3>
+          <div class="my-project-link-block">
+            <a
+              href="https://github.com/AistraViter/f16"
+              class="my-project-link"
+              target="_blank"
+            >
+              Visit
+              <svg width="24" height="24" class="vector-icon">
+                <use href="/js_103_AistraViter/assets/symbol-defs-acd9485f.svg#icon-up_arrow_visit"></use>
+
+              </svg>
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <li class="my-project-list-item">
+        <img
+          srcset="/js_103_AistraViter/assets/my-projects-3-1x-min-4a2fef59.jpg 1x, /js_103_AistraViter/assets/my-projects-3-2x-min-b86e75e8.jpg 2x"
+          src="/js_103_AistraViter/assets/my-projects-3-1x-min-4a2fef59.jpg"
+          class="my-project-img"
+          alt="Vyshyvanka vibes Landing Page project"
+        />
+        <p class="my-project-technologies">React, JavaScript, Node JS, Git</p>
+        <div class="my-project-link-name-block">
+          <h3 class="my-project-name">Vyshyvanka vibes Landing Page</h3>
+          <div class="my-project-link-block">
+            <a
+              href="https://github.com/AistraViter/f16"
+              class="my-project-link"
+              target="_blank"
+            >
+              Visit
+              <svg width="24" height="24" class="vector-icon">
+                <use href="/js_103_AistraViter/assets/symbol-defs-acd9485f.svg#icon-up_arrow_visit"></use>
+
+              </svg>
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <li class="my-project-list-item">
+        <img
+          srcset="/js_103_AistraViter/assets/my-projects-4-1x-min-80458700.jpg 1x, /js_103_AistraViter/assets/my-projects-4-2x-min-9b50477d.jpg 2x"
+          src="/js_103_AistraViter/assets/my-projects-4-1x-min-80458700.jpg"
+          class="my-project-img"
+          alt="Green harvest online store project"
+        />
+        <p class="my-project-technologies">React, JavaScript, Node JS, Git</p>
+        <div class="my-project-link-name-block">
+          <h3 class="my-project-name">Green harvest online store</h3>
+          <div class="my-project-link-block">
+            <a
+              href="https://github.com/AistraViter/f16"
+              class="my-project-link"
+              target="_blank"
+            >
+              Visit
+              <svg width="24" height="24" class="vector-icon">
+                <use href="/js_103_AistraViter/assets/symbol-defs-acd9485f.svg#icon-up_arrow_visit"></use>
+
+              </svg>
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <li class="my-project-list-item">
+        <img
+          srcset="/js_103_AistraViter/assets/my-projects-5-1x-min-66549956.jpg 1x, /js_103_AistraViter/assets/my-projects-5-2x-min-1bc73626.jpg 2x"
+          src="/js_103_AistraViter/assets/my-projects-5-1x-min-66549956.jpg"
+          class="my-project-img"
+          alt="Wallet webservice project"
+        />
+        <p class="my-project-technologies">React, JavaScript, Node JS, Git</p>
+        <div class="my-project-link-name-block">
+          <h3 class="my-project-name">Wallet webservice</h3>
+          <div class="my-project-link-block">
+            <a
+              href="https://github.com/AistraViter/f16"
+              class="my-project-link"
+              target="_blank"
+            >
+              Visit
+              <svg width="24" height="24" class="vector-icon">
+                <use href="/js_103_AistraViter/assets/symbol-defs-acd9485f.svg#icon-up_arrow_visit"></use>
+
+              </svg>
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <li class="my-project-list-item">
+        <img
+          srcset="/js_103_AistraViter/assets/my-projects-6-1x-min-60b5665b.jpg 1x, /js_103_AistraViter/assets/my-projects-6-2x-min-ccdf397a.jpg 2x"
+          src="/js_103_AistraViter/assets/my-projects-6-1x-min-60b5665b.jpg"
+          class="my-project-img"
+          alt="Chego jewelry website project"
+        />
+        <p class="my-project-technologies">React, JavaScript, Node JS, Git</p>
+        <div class="my-project-link-name-block">
+          <h3 class="my-project-name">Chego jewelry website</h3>
+          <div class="my-project-link-block">
+            <a
+              href="https://github.com/AistraViter/f16"
+              class="my-project-link"
+              target="_blank"
+            >
+              Visit
+              <svg width="24" height="24" class="vector-icon">
+                <use href="/js_103_AistraViter/assets/symbol-defs-acd9485f.svg#icon-up_arrow_visit"></use>
+
+              </svg>
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <li class="my-project-list-item">
+        <img
+          srcset="/js_103_AistraViter/assets/my-projects-7-1x-min-ebbf9a49.jpg 1x, /js_103_AistraViter/assets/my-projects-7-2x-min-53ebfb29.jpg 2x"
+          src="/js_103_AistraViter/assets/my-projects-7-1x-min-ebbf9a49.jpg"
+          class="my-project-img"
+          alt="Energy flow webservice project"
+        />
+        <p class="my-project-technologies">React, JavaScript, Node JS, Git</p>
+        <div class="my-project-link-name-block">
+          <h3 class="my-project-name">Energy flow webservice</h3>
+          <div class="my-project-link-block">
+            <a
+              href="https://github.com/AistraViter/f16"
+              class="my-project-link"
+              target="_blank"
+            >
+              Visit
+              <svg width="24" height="24" class="vector-icon">
+                <use href="/js_103_AistraViter/assets/symbol-defs-acd9485f.svg#icon-up_arrow_visit"></use>
+
+              </svg>
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <li class="my-project-list-item">
+        <img
+          srcset="/js_103_AistraViter/assets/my-projects-8-1x-min-353d9807.jpg 1x, /js_103_AistraViter/assets/my-projects-8-2x-min-22e858fe.jpg 2x"
+          src="/js_103_AistraViter/assets/my-projects-8-1x-min-353d9807.jpg"
+          class="my-project-img"
+          alt="Fruitbox online store project"
+        />
+        <p class="my-project-technologies">React, JavaScript, Node JS, Git</p>
+        <div class="my-project-link-name-block">
+          <h3 class="my-project-name">Fruitbox online store</h3>
+          <div class="my-project-link-block">
+            <a
+              href="https://github.com/AistraViter/f16"
+              class="my-project-link"
+              target="_blank"
+            >
+              Visit
+              <svg width="24" height="24" class="vector-icon">
+                <use href="/js_103_AistraViter/assets/symbol-defs-acd9485f.svg#icon-up_arrow_visit"></use>
+
+              </svg>
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <li class="my-project-list-item">
+        <img
+          srcset="/js_103_AistraViter/assets/my-projects-9-1x-min-1b522989.jpg 1x, /js_103_AistraViter/assets/my-projects-9-2x-min-79bf46fe.jpg 2x"
+          src="/js_103_AistraViter/assets/my-projects-9-1x-min-1b522989.jpg"
+          class="my-project-img"
+          alt="English excellence webservice project"
+        />
+        <p class="my-project-technologies">React, JavaScript, Node JS, Git</p>
+        <div class="my-project-link-name-block">
+          <h3 class="my-project-name">English excellence webservice</h3>
+          <div class="my-project-link-block">
+            <a
+              href="https://github.com/AistraViter/f16"
+              class="my-project-link"
+              target="_blank"
+            >
+              Visit
+              <svg width="24" height="24" class="vector-icon">
+                <use href="/js_103_AistraViter/assets/symbol-defs-acd9485f.svg#icon-up_arrow_visit"></use>
+
+              </svg>
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <li class="my-project-list-item">
+        <img
+          srcset="/js_103_AistraViter/assets/my-projects-10-1x-min-a5ae6c33.jpg 1x, /js_103_AistraViter/assets/my-projects-10-2x-min-42913373.jpg 2x"
+          src="/js_103_AistraViter/assets/my-projects-10-1x-min-a5ae6c33.jpg"
+          class="my-project-img"
+          alt="Starlight studio landing page project"
+        />
+        <p class="my-project-technologies">React, JavaScript, Node JS, Git</p>
+        <div class="my-project-link-name-block">
+          <h3 class="my-project-name">Starlight studio landing page</h3>
+          <div class="my-project-link-block">
+            <a
+              href="https://github.com/AistraViter/f16"
+              class="my-project-link"
+              target="_blank"
+            >
+              Visit
+              <svg width="24" height="24" class="vector-icon">
+                <use href="/js_103_AistraViter/assets/symbol-defs-acd9485f.svg#icon-up_arrow_visit"></use>
+
+              </svg>
+            </a>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <div class="load-more-btn-block">
+      <button type="button" class="load-more-btn">Load more</button>
+    </div>
+  </div>
+</section>
+
+      <section class="section">
+  <div class="container background-benefits">
+    <h2 class="headline">
+      <span class="green-span">Benefits</span> of<br />
+      working with<br />
+      me
+    </h2>
+    <ul class="benefits-block">
+      <li>
+        <svg width="48" height="48">
+          <use href="/js_103_AistraViter/assets/symbol-defs-acd9485f.svg#icon-men"></use>
+        </svg>
+        <h3 class="title-under-benefits">Expertise</h3>
+        <p class="text-benefits">
+          With extensive experience in development, I have a deep understanding
+          of programming and website development.
+        </p>
+      </li>
+      <li>
+        <svg width="48" height="48">
+          <use href="/js_103_AistraViter/assets/symbol-defs-acd9485f.svg#icon-mesage"></use>
+        </svg>
+        <h3 class="title-under-benefits">Communication</h3>
+        <p class="text-benefits">
+          Understanding your needs and wants is my priority and I am always
+          available for discussions and open to corrections.
+        </p>
+      </li>
+      <li>
+        <svg width="48" height="48">
+          <use href="/js_103_AistraViter/assets/symbol-defs-acd9485f.svg#icon-penzlik"></use>
+        </svg>
+        <h3 class="title-under-benefits">Art</h3>
+        <p class="text-benefits">
+          Thanks to my creative nature, I am ready to accept challenges and help
+          you bring your ideas to life.
+        </p>
+      </li>
+      <li>
+        <svg width="48" height="48">
+          <use href="/js_103_AistraViter/assets/symbol-defs-acd9485f.svg#icon-sand-clock"></use>
+        </svg>
+        <h3 class="title-under-benefits">Urgent execution</h3>
+        <p class="text-benefits">
+          I understand how important time is to you. Ready to work quickly and
+          efficiently, without reducing the quality of work.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="section">
+  <div class="container container-faq">
+    <h2 class="headline headline-faq">
+      Frequently Asked <span class="green-span">Questions</span>
+    </h2>
+
+    <ul class="accordion">
+      <li class="accordion-item active" aria-expanded="false">
+        <button id="accordion-button-1" class="accordion-title" type="button">
+          <span class="accordion-head">
+            What programming languages are most often used in your project?
+          </span>
+          <span class="icon" aria-hidden="true">
+            <svg width="24" height="24" class="arrow up" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 15L12 9L6 15" stroke="#292929" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <svg width="24" height="24" class="arrow down" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 9L12 15L6 9" stroke="#292929" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </span>
+        </button>
+        <div class="accordion-content" hidden>
+          <p class="text">
+            In the field of web development, there are various technologies and programming languages. Typically, this includes a combination of frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <li class="accordion-item">
+        <button id="accordion-button-2" class="accordion-title" type="button" aria-expanded="false">
+          <span class="accordion-head">What are the deadlines for the project?</span>
+          <span class="icon" aria-hidden="true">
+            <svg width="24" height="24" class="arrow up" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 15L12 9L6 15" stroke="#292929" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <svg width="24" height="24" class="arrow down" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 9L12 15L6 9" stroke="#292929" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </span>
+        </button>
+        <div class="accordion-content" hidden>
+          <p class="text">
+
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+      <li class="accordion-item">
+        <button id="accordion-button-3" class="accordion-title" type="button" aria-expanded="false">
+          <span class="accordion-head">What payment methods do you accept?</span>
+          <span class="icon" aria-hidden="true">
+            <svg width="24" height="24" class="arrow up" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 15L12 9L6 15" stroke="#292929" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <svg width="24" height="24" class="arrow down" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 9L12 15L6 9" stroke="#292929" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </span>
+        </button>
+        <div class="accordion-content" hidden>
+          <p class="text">
+
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+      <li class="accordion-item">
+        <button id="accordion-button-4" class="accordion-title" type="button" aria-expanded="false">
+          <span class="accordion-head">How can I contact you?</span>
+          <span class="icon" aria-hidden="true">
+            <svg width="24" height="24" class="arrow up" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 15L12 9L6 15" stroke="#292929" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <svg width="24" height="24" class="arrow down" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 9L12 15L6 9" stroke="#292929" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </span>
+        </button>
+        <div class="accordion-content" hidden>
+          <p class="text">
+
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <li class="accordion-item">
+        <button id="accordion-button-5" class="accordion-title" type="button" aria-expanded="false">
+          <span class="accordion-head">Do you provide advice or support?</span>
+          <span class="icon" aria-hidden="true">
+            <svg width="24" height="24" class="arrow up" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 15L12 9L6 15" stroke="#292929" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <svg width="24" height="24" class="arrow down" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 9L12 15L6 9" stroke="#292929" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </span>
+        </button>
+        <div class="accordion-content" hidden>
+          <p class="text">
+
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+      <li class="accordion-item">
+        <button id="accordion-button-6" class="accordion-title" type="button" aria-expanded="false">
+          <span class="accordion-head">What does the process of developing a software product look like
+            from idea to implementation?</span>
+          <span class="icon" aria-hidden="true">
+            <svg width="24" height="24" class="arrow up" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 15L12 9L6 15" stroke="#292929" stroke-width="2" stroke-linecap="round" />
+            </svg>
+            <svg width="24" height="24" class="arrow down" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 9L12 15L6 9" stroke="#292929" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </span>
+        </button>
+        <div class="accordion-content" hidden>
+          <p class="text">
+
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="section">
+  <div class="container">
+    <h2 class="headline text-center">REVIEWS</h2>
+    <p class="empty-text is-hidden">No found</p>
+
+    <div class="swiper mySwiper">
+      <ul class="reviews-list swiper-wrapper"></ul>
+
+      <div class="reviews-navigation">
+        <button class="reviews-navigation-btn swiper-button-prev">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20 12H4.00001"
+              stroke="#292929"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M10 18L4 12L10 6"
+              stroke="#292929"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <button class="reviews-navigation-btn swiper-button-next">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 12H20"
+              stroke="#292929"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M14 6L20 12L14 18"
+              stroke="#292929"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="section" id="work-together-link">
+  <div class="container backgroung-worktogether" id="contacts">
+    <h2 class="headline">
+      Let's
+      <span class="green-span"
+        >work<br />
+        together</span
+      >
+    </h2>
+    <div class="wt-content-wrapper">
+      <div class="wt-text-address-wrapper">
+        <p class="worktogether-paragraph">
+          Contact me to transform your ideas into exceptional solutions.
+        </p>
+        <address>
+          <ul class="contacts-list">
+            <li class="contacts-items">
+              <svg class="address-icons" width="24" height="24">
+                <use href="/js_103_AistraViter/assets/symbol-defs-acd9485f.svg#icon-telefon"></use>
+              </svg>
+              <a class="contacts-link" href="tel:+380904567890"
+                >+38 090 456 78 90</a
+              >
+            </li>
+            <li class="contacts-items">
+              <svg class="address-icons" width="24" height="24">
+                <use href="/js_103_AistraViter/assets/symbol-defs-acd9485f.svg#icon-konvert"></use>
+              </svg>
+              <a class="contacts-link" href="mailto:lloydjefferson@gmail.com"
+                >lloydjefferson@gmail.com</a
+              >
+            </li>
+            <li class="contacts-items">
+              <svg class="address-icons" width="24" height="24">
+                <use href="/js_103_AistraViter/assets/symbol-defs-acd9485f.svg#icon-gps-marker"></use>
+              </svg>
+              <a
+                target="_blank"
+                class="contacts-link"
+                href="https://www.google.com/maps/place/USA,+New+York"
+                >USA, New York</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+
+      <form class="work-together-form" id="work-together-form">
+        <div class="input-wrapper">
+          <input
+            class="user-email"
+            id="user-email"
+            name="email"
+            placeholder="Your email*"
+            required
+          />
+          <svg class="email-check-icon" width="16" height="16">
+            <use href="/js_103_AistraViter/assets/symbol-defs-acd9485f.svg#icon-green-check-mark"></use>
+          </svg>
+        </div>
+        <p id="email-error" style="color: #e74a3b; display: none">
+          Invalid email, try again
+        </p>
+        <textarea
+          class="user-message"
+          id="user-message"
+          name="message"
+          placeholder="Message"
+          required
+        ></textarea>
+        <button class="btn-message" id="sendButton" type="submit">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+      <div class="backdrop">
+  <div class="modal">
+    <button class="close" type="button" id="closeModal">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 6L6 18" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M6 6L18 18" stroke="#292929" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+    <h2 class="modal-header">Thank you for your interest in cooperation!</h2>
+    <p class="modal-paragraf">
+      The manager will contact you shortly to discuss further details and
+      opportunities for cooperation. Please stay in touch.
+    </p>
+  </div>
+</div>
+    </main>
+    <footer class="footer-section">
+  <div class="container">
+    <div class="footer-flex">
+      <a href="./index.html" class="logo">LLOYD<span class="green-span">JEFFERSON.</span></a>
+      <ul class="footer-list">
+        <li class="footer-list-element">
+          <a rel="noopener noreferrer nofollow" target="_blank" href="https://www.instagram.com/goitclub/"
+            >Instagram</a
+          >
+        </li>
+        <li class="footer-list-element">
+          <a rel="noopener" target="_blank" href="https://www.facebook.com/goITclub/"
+            >Facebook</a
+          >
+        </li>
+        <li class="footer-list-element">
+          <a rel="noopener noreferrer nofollow"
+            target="_blank"
+            href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+            >Linkedin</a
+          >
+        </li>
+        <li class="footer-list-element">
+          <a rel="noopener noreferrer nofollow" target="_blank" href="https://github.com/AistraViter/f16"
+            >Github</a
+          >
+        </li>
+      </ul>
+    </div>
+    <p class="footer-paragraph">© Copyright 2024. Made by LloydJefferson</p>
+  </div>
+</footer>
+
+    
+    
+    
+
+    
+    
+    
+    
+    
+  </body>
+</html>
+
+<!-- Початок роботи для кожної секції.
+
+
+<section class="section">
+  <div class="container">
+
+  </div>
+</section>
+
+-->
