@@ -1,216 +1,227 @@
-.headline {
-    padding: 0px 20px;
-}
-
-.faq {
-    font-family: "Impact", sans-serif;
-    font-weight: 400;
-    font-size: 52px;
-    line-height: 1.23077;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #292929;
-    margin-bottom: 42px;
-}
-
-.questions {
-    color: #00b068;
-}
-
 .accordion {
-    padding: 0px 20px;
-    width: 360px;
+  min-width: 280px;
+  max-width: 320px;
+  margin: 40px auto 0 auto;
 }
 
-.accordion-container {
-    padding: 0px;
-}
-
-.accordion .accordion-item {
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid #ccc;
+.accordion-item {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #ccc;
 }
 
 .accordion-title {
-    font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #292929;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
-.accordion .accordion-item button[aria-expanded=true] {
-    padding: 28px 24px;
-    width: 320px;
-    background: rgba(0, 176, 104, 0.2);
-    border-bottom: none;
-
+.accordion .accordion-item button[aria-expanded='true'] {
+  padding: 28px 24px;
+  min-width: 280px;
+  max-width: 320px;
+  background: rgba(0, 176, 104, 0.2);
+  border-bottom: none;
 }
 
 .accordion button {
-    position: relative;
-    display: block;
-    text-align: left;
-    width: 100%;
-    padding: 1em 0;
-    color: #292929;
-    font-size: 1.15rem;
-    font-weight: 400;
-    border: none;
-    background: none;
-    outline: none;
-    border-bottom: 1px solid #ccc;
+  position: relative;
+  display: block;
+  text-align: left;
+  min-width: 280px;
+  max-width: 320px;
+  padding: 1em 0;
+  color: #292929;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+  border-radius: 24px;
 }
 
 .accordion button:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .accordion button .icon {
-    display: inline-block;
-    position: absolute;
-    top: 18px;
-    right: 0;
-    border: 1px solid;
-    width: 32px;
-    height: 32px;
-    border: none;
-    margin-top: 8px;
-    margin-right: 8px;
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  border: 1px solid;
+  width: 32px;
+  height: 32px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 8px;
 }
 
-.accordion button[aria-expanded=true]+.accordion-item button {
-    border-radius: 18px;
-    padding: 28px 24px;
-    opacity: 1;
-    transition: all 200ms linear;
-    will-change: opacity, max-height;
-    background: rgba(0, 176, 104, 0.2);
+.accordion button[aria-expanded='true'] + .accordion-item button {
+  border-radius: 18px;
+  padding: 28px 24px;
+  opacity: 1;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+  background: rgba(0, 176, 104, 0.2);
 }
 
 .accordion .accordion-content {
-    background: rgba(0, 176, 104, 0.2);
-    overflow: hidden;
-    transition: opacity 200ms linear, max-height 200ms linear;
-    will-change: opacity, max-height;
+  background: rgba(0, 176, 104, 0.2);
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
 }
 
 .accordion .accordion-content.active {
-    background: rgba(0, 176, 104, 0.2);
+  background: rgba(0, 176, 104, 0.2);
 }
 
 .accordion .accordion-content p {
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
-    color: #292929;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
 }
 
-.picture {}
+.picture {
+}
 
 .arrow {
-    display: none;
+  display: none;
 }
 
 .arrow.down {
-    display: block;
+  display: block;
 }
 
-.accordion-title[aria-expanded="true"] .arrow.down {
-    display: none;
+.accordion-title[aria-expanded='true'] .arrow.down {
+  display: none;
 }
 
-.accordion-title[aria-expanded="true"] .arrow.up {
-    display: block;
+.accordion-title[aria-expanded='true'] .arrow.up {
+  display: block;
 }
 
 /* *****************TABLET********************* */
 
 @media screen and (min-width: 768px) {
+  .accordion {
+    width: 704px;
+    max-width: 704px;
+  }
+  .accordion button {
+    width: 704px;
+    max-width: 704px;
+  }
 
-    .accordion {
-        padding: 0px 32px;
-        width: 768px;
-    }
+  .accordion-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
 
-    .accordion-title {
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 1.6;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #292929;
-    }
+  .picture {
+    display: none;
+  }
 
-    .picture {
-        display: none;
-    }
-
-    .accordion .accordion-item button[aria-expanded=true] {
-        width: 704px;
-    }
+  .accordion .accordion-item button[aria-expanded='true'] {
+    width: 704px;
+  }
 }
 
 /* ****************DESKTOP****************** */
 
 @media screen and (min-width: 1280px) {
+  .container-faq {
+    width: 1280px;
+    min-height: 1020px;
+    position: relative;
+  }
 
-    .accordion {
-        padding: 0px 32px;
-        display: flex;
-        flex-direction: column;
-        width: 592px;
-        margin-left: auto;
-    }
 
-    .accordion-title {
-        font-family: var(--second-family);
-        font-weight: 400;
-        font-size: 108px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        text-transform: uppercase;
-        color: var(--black);
-    }
 
-    .accordion button[aria-expanded=true]+.accordion-content {
-        border-bottom: 1px solid #ccc;
-        padding: 28px 24px;
-        height: 152px;
-        opacity: 1;
-        transition: all 200ms linear;
-        will-change: opacity, max-height;
-        background: rgba(0, 176, 104, 0.2);
-    }
 
-    .headline {
-        display: flex;
-        flex-direction: column;
-        font-weight: 400;
-        font-size: 108px;
-        line-height: 1.15;
-        letter-spacing: 0.02em;
-        text-transform: uppercase;
-        color: var(--black);
-    }
+  
+  .container-faq::before {
+    width: 526px;
+    height: 408px;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 32px;
+    background-image: url('/img/decor-big-faq.png');
+    background-repeat: no-repeat;
+    z-index: -1; /* Розміщує псевдоелемент позаду контенту */
+  }
+  
 
-    .accordion .accordion-item button[aria-expanded=true] {
-        width: auto;
-    }
+  .accordion {
+    margin-top: 276px;
+    margin-right: 32px;
+    position: absolute;
+    top: 0;
+    right: 0;
 
-    .picture {
-        margin-bottom: auto;
-        filter: blur(7.40168571472168px);
-    }
+    width: 592px;
+    max-width: 592px;
+  }
 
-    .blur {
-        margin-bottom: auto;
-    }
+  .accordion button {
+    width: 592px;
+    max-width: 592px;
+  }
+
+  .accordion {
+    padding: 0px 32px;
+    display: flex;
+    flex-direction: column;
+    width: 592px;
+    margin-left: auto;
+  }
+
+  .accordion-title {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 108px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--black);
+  }
+
+  .accordion button[aria-expanded='true'] + .accordion-content {
+    border-bottom: 1px solid #ccc;
+    padding: 28px 24px;
+    height: 152px;
+    opacity: 1;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+    background: rgba(0, 176, 104, 0.2);
+  }
+
+  .headline-faq {
+    width: 520px;
+  }
+
+  .accordion .accordion-item button[aria-expanded='true'] {
+    width: auto;
+  }
+
+  .picture {
+    margin-bottom: auto;
+    filter: blur(7.40168571472168px);
+  }
+
+  .blur {
+    margin-bottom: auto;
+  }
 }

@@ -79,7 +79,7 @@ body.dark-theme{
 
 
 
-/* для тестування, чи ніхто не вийшов за границі секцій
+/* для тестування, чи ніхто не вийшов за границі секцій*/
 .container {
   border: 2px solid red;
 }
@@ -88,7 +88,7 @@ body.dark-theme{
 .section {
   border: 2px solid blue;
 }
-*/
+
 
 /*CONTAINER & SECTION*/
 .container {

@@ -7,6 +7,11 @@
   margin-bottom: 40px;
 }
 
+.marginclass:last-child {
+  margin-bottom: 0;
+}
+
+
 .htwoclass {
   font-weight: 500;
   font-size: 32px;
@@ -71,7 +76,11 @@
     top: 856px; /* Располагаем квадрат от верхнего края на 100px */
     left: 400px;
   }
-
+  .marginclass {
+    margin-bottom: 0px;
+  }
+  
+  
   .imgclass {
     height: 392px;
     margin-top: 408px;
