@@ -9,15 +9,18 @@ items[0].nextElementSibling.hidden = false;
 function toggleAccordion() {
     const itemToggle = this.getAttribute('aria-expanded');
     const content = this.nextElementSibling;
+    const accordionItem = this.parentElement;
 
-    for (let i = 0; i < items.length; i++) {
-        items[i].setAttribute('aria-expanded', 'false');
-        items[i].nextElementSibling.hidden = true;
-    }
+    items.forEach(item => {
+        item.setAttribute('aria-expanded', 'false');
+        item.nextElementSibling.hidden = true;
+        item.parentElement.classList.remove('active');
+    });
 
     if (itemToggle === 'false') {
         this.setAttribute('aria-expanded', 'true');
         content.hidden = false;
+        accordionItem.classList.add('active');
     }
 }
 

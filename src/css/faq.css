@@ -8,19 +8,32 @@
   display: flex;
   flex-direction: column;
   border-bottom: 1px solid #ccc;
+  margin-bottom: 1em; /* Додати відступ між елементами */
+  overflow: hidden;
+  border-radius: 18px; /* Скруглені кути для всього елемента */
 }
 
 .accordion-title {
-  font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 24px;
+    background: rgba(0, 176, 104, 0.2);
+    border-radius: 18px; /* Скруглені кути для заголовка */
+    cursor: pointer;
+    transition: background 200ms linear;
+  }
+  
 
-.accordion .accordion-item button[aria-expanded='true'] {
+.accordion .accordion-item button[aria-expanded='true'] + .accordion-content {
   padding: 28px 24px;
   min-width: 280px;
   max-width: 320px;
@@ -62,19 +75,20 @@
 }
 
 .accordion button[aria-expanded='true'] + .accordion-item button {
-  border-radius: 18px;
   padding: 28px 24px;
   opacity: 1;
   transition: all 200ms linear;
   will-change: opacity, max-height;
-  background: rgba(0, 176, 104, 0.2);
 }
 
 .accordion .accordion-content {
   background: rgba(0, 176, 104, 0.2);
+  border-radius: 18px;
+
   overflow: hidden;
   transition: opacity 200ms linear, max-height 200ms linear;
   will-change: opacity, max-height;
+  height: 200%; /* Додаємо новий стиль для збільшення висоти */
 }
 
 .accordion .accordion-content.active {
@@ -88,6 +102,8 @@
   line-height: 1.56;
   letter-spacing: 0.03em;
 }
+
+
 
 .picture {
 }
@@ -119,6 +135,7 @@
     width: 704px;
     max-width: 704px;
   }
+  
 
   .accordion-title {
     font-family: 'Poppins', sans-serif;
@@ -147,10 +164,6 @@
     position: relative;
   }
 
-
-
-
-  
   .container-faq::before {
     width: 526px;
     height: 408px;
@@ -162,7 +175,6 @@
     background-repeat: no-repeat;
     z-index: -1; /* Розміщує псевдоелемент позаду контенту */
   }
-  
 
   .accordion {
     margin-top: 276px;
