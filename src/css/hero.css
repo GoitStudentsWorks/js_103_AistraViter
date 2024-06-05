@@ -111,7 +111,7 @@
 
 .hero-soc-media {
   padding: 32px 0px;
-  margin: 0px -20px;
+  margin: 0px auto;
   background-color: #e4e5e6;
 }
 
@@ -197,7 +197,7 @@
   }
 
   .hero-soc-media {
-    margin: 0px -32px;
+    margin: 0px auto;
     padding: 40px 0px;
   }
   .hero-soc-media ul {
