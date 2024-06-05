@@ -39,10 +39,6 @@ function toggleAccordion(event) {
 
 // Оновлюємо висоту контейнера акордеону
 function updateAccordionHeight() {
-    const accordion = document.querySelector('.accordion');
-    const activeAccordionItem = document.querySelector('.accordion-item.active');
-    const contentHeight = activeAccordionItem.querySelector('.accordion-content').scrollHeight;
-    accordion.style.height = contentHeight + 'px';
 }
 
 // Додаємо слухач подій для кожної кнопки
@@ -53,3 +49,5 @@ accordionItems.forEach(item => item.addEventListener('click', function(event) {
     const button = this.querySelector('button');
     button.click();
 }));
+
+

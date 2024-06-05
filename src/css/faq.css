@@ -1,8 +1,8 @@
 /* Загальні стилі для аккордеону */
+
 .accordion {
   min-width: 280px;
   max-width: 320px;
-  height: auto;
   margin: 40px auto 0;
   padding: 0;
   list-style: none;
@@ -102,6 +102,13 @@
 .accordion-title[aria-expanded='true']::after {
   background-color: transparent;
 }
+
+
+body.dark-theme .arrow path {
+
+    stroke: white; 
+  }
+
 /* *****************TABLET********************* */
 
 @media screen and (min-width: 768px) {
