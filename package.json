@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/f16/",
+    "build": "vite build --base=/js_103_AistraViter/",
     "preview": "vite preview"
   },
   "devDependencies": {
