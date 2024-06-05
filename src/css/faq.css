@@ -1,102 +1,108 @@
 /* Загальні стилі для аккордеону */
 .accordion {
-    min-width: 280px;
-    max-width: 320px;
-    margin: 40px auto 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  /* Стилі для елементів аккордеону */
-  .accordion-item {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1em; /* Відступ між елементами */
-    overflow: hidden;
-    border-radius: 18px;
-    transition: background 200ms linear;
-  }
-  
-  /* Додаємо фоновий колір для активного елемента */
-  .accordion-item.active {
-    background: rgba(0, 176, 104, 0.2); /* Світло салатовий фон при відкритті */
-  }
-  
-  /* Стилі для заголовків аккордеону */
-  .accordion-title {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 28px 24px;
-    cursor: pointer;
+  min-width: 280px;
+  max-width: 320px;
+  height: auto;
+  margin: 40px auto 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Стилі для елементів аккордеону */
+.accordion-item {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #ccc;
+  overflow: hidden;
+  transition: background 200ms linear;
+}
+
+/* Стилі для першого елемента */
+.accordion-item:first-child {
     border: none;
-    background: none;
-    outline: none;
-    transition: background 200ms linear;
-    position: relative; /* Додаємо для псевдоелемента */
-    text-align: left; /* Вирівнювання по лівому краю */
-  }
+}
   
-  /* Підкреслення заголовка у закритому стані */
-  .accordion-title::after {
-    content: '';
-    position: absolute;
-    left: 24px;
-    bottom: 0;
-    width: calc(100% - 48px);
-    height: 2px;
-    background-color: #ccc;
-    transition: background-color 200ms linear;
-  }
-  
-  /* Стилі для контенту аккордеону */
-  .accordion-content {
-    padding: 28px 24px;
-    background: none;
-    transition: opacity 200ms linear, max-height 200ms linear;
-    will-change: opacity, max-height;
-  }
-  
-  .accordion-content p {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
-  }
-  
-  /* Стилі для іконок */
-  .accordion-title .icon {
-    display: flex;
-  }
-  
-  .arrow {
-    display: none;
-  }
-  
-  .arrow.down {
-    display: block;
-  }
-  
-  .accordion-title[aria-expanded='true'] .arrow.down {
-    display: none;
-  }
-  
-  .accordion-title[aria-expanded='true'] .arrow.up {
-    display: block;
-  }
-  
-  /* При розгортанні заголовка, видаляємо підкреслення */
-  .accordion-title[aria-expanded='true']::after {
-    background-color: transparent;
-  }
-      /* *****************TABLET********************* */
+  /* Стилі для останнього елемента */
+  .accordion-item:last-child {
+    border-bottom: 1px solid #ccc;
+}
+
+/* Додаємо фоновий колір для активного елемента */
+.accordion-item.active {
+  background: rgba(0, 176, 104, 0.2); /* Світло салатовий фон при відкритті */
+  border: none;
+  border-radius: 18px;
+}
+
+
+/* Ховаємо рамку попереднього активного елемента */
+.accordion-item.active + .accordion-item {
+      border: none;
+}
+
+/* Стилі для заголовків аккордеону */
+.accordion-title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: inherit;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 24px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+  transition: background 200ms linear;
+  position: relative; /* Додаємо для псевдоелемента */
+  text-align: left; /* Вирівнювання по лівому краю */
+}
+
+/* Стилі для контенту аккордеону */
+.accordion-content {
+  background: none;
+  padding: 28px 24px;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+
+.accordion-content p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  margin-top: -24px;
+}
+
+/* Стилі для іконок */
+.accordion-title .icon {
+  display: flex;
+}
+
+.arrow {
+  display: none;
+}
+
+.arrow.down {
+  display: block;
+}
+
+.accordion-title[aria-expanded='true'] .arrow.down {
+  display: none;
+}
+
+.accordion-title[aria-expanded='true'] .arrow.up {
+  display: block;
+}
+
+/* При розгортанні заголовка, видаляємо підкреслення */
+.accordion-title[aria-expanded='true']::after {
+  background-color: transparent;
+}
+/* *****************TABLET********************* */
 
 @media screen and (min-width: 768px) {
   .accordion {
@@ -107,10 +113,9 @@
     width: 704px;
     max-width: 704px;
   }
-  
 
   .accordion-title {
-    font-family: 'Poppins', sans-serif;
+    color: inherit;
     font-weight: 400;
     font-size: 20px;
     line-height: 1.6;
@@ -130,23 +135,38 @@
 /* ****************DESKTOP****************** */
 
 @media screen and (min-width: 1280px) {
-    .container-faq {
-      width: 1280px;
-      min-height: 1020px;
-      position: relative;
-    }
-  
-    .container-faq::before {
-      width: 526px;
-      height: 408px;
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 32px;
-      background-image: url('/img/decor-big-faq.png');
-      background-repeat: no-repeat;
-      z-index: -1; /* Розміщує псевдоелемент позаду контенту */
-    }
-  
+  .container-faq {
+    width: 1280px;
+    height: 1020px;
+    position: relative;
   }
-  
+
+  .headline-faq {
+    width: 520px;
+  }
+
+  .container-faq::before {
+    width: 526px;
+    height: 408px;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 32px;
+    background-image: url('/img/decor-big-faq.png');
+    background-repeat: no-repeat;
+    z-index: -1; /* Розміщує псевдоелемент позаду контенту */
+  }
+
+  .accordion {
+    width: 592px;
+    max-width: 592px;
+    position: absolute;
+    right: 32px;
+    top: 212px;
+  }
+
+  .accordion button {
+    width: 592px;
+    max-width: 592px;
+  }
+}

@@ -32,6 +32,17 @@ function toggleAccordion(event) {
         accordionItem.classList.add('active');
         accordionItem.setAttribute('aria-expanded', 'true');
     }
+
+    // Оновлюємо висоту контейнера акордеону
+    updateAccordionHeight();
+}
+
+// Оновлюємо висоту контейнера акордеону
+function updateAccordionHeight() {
+    const accordion = document.querySelector('.accordion');
+    const activeAccordionItem = document.querySelector('.accordion-item.active');
+    const contentHeight = activeAccordionItem.querySelector('.accordion-content').scrollHeight;
+    accordion.style.height = contentHeight + 'px';
 }
 
 // Додаємо слухач подій для кожної кнопки
